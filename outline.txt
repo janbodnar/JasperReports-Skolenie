@@ -1,0 +1,39 @@
+
+  Report definition
+  JasperReports library
+  Installation
+
+  Life cycle
+    - design XML template
+    - compile template into Jasper report
+    - fill report with data; JasperPrint generated
+    - export JasperPrint into final report file 
+
+  Report layout 
+    - title, column header, detail, column footer, summary
+
+  Report elements
+    - static text, text fields, image, list, table
+
+  Styles
+  Filtering, sorting
+  Creating charts
+  Creating report with a Servlet
+  Creating reports with JasperReports API
+
+  Output formats
+    - PDF, HTML, CSV, XLS
+
+  Fields, parameters, variables, resources
+
+  Data sources
+    - JRResultSetDataSource, JRBeanCollectionDataSource, 
+      RMapArrayDataSource, JRCsvDataSource
+    - Custom data source
+
+  Scriptlets
+  SubDatasets
+
+ 
+ 
+
