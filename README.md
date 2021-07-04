@@ -1,11 +1,13 @@
 # JasperReports-Skolenie
-Školenie JasperReports
 
-Kurz je určený pre programátorov, ktorí sa chcú naučiť vytvárať reporty 
+
+
+
+Kurz je určený pre programátorov, ktorí sa chcú naučiť vytvárať reporty  
 pomocou JasperReports v jazyku Java.
 
-Minimálne vstupné vedomosti: základy programovania v jazyku Java.
-Odporúča sa absolvovať kurzy Java základy jazyka I 
+Minimálne vstupné vedomosti: základy programovania v jazyku Java. 
+Odporúča sa absolvovať kurzy Java základy jazyka I  
 a Java základy jazyka II.
 
 Úvod
@@ -44,11 +46,4 @@ Pokročilejšie nástroje
 - Tabuľky
 - Kontingenčné, krížové tabuľky
 
-(Voliteľne)
-Tvorba reportu v Java servlete 
-Tvorba reportu pomocou JasperReports API
-Integrácia JasperReports vo frameworku Spring
-Tvorba reportov pomocou nástrojov Ant a Ivy
 
-Výstupné vedomosti: absolvent kurzu bude schopný vytvárať komplexné
-reporty pomocou knižnice JasperReports.
