@@ -1,14 +1,20 @@
 # JasperReports-Skolenie
 
+Dĺžka trvania: 2 x 5 hodín počas dvoch dní  
+
+Kurz je určený pre záujemcov, ktorí sa chcú naučiť vytvárať reporty  
+pomocou JasperReports v jazyku Java. Pre kurz je vhodné mať zvládnuté  
+základy programovania. Na školení sa pracuje v prostredí IntelliJ IDEA.  
+
+Je potrebné mať naištalované nasledujúce nástroje:
+
+IntelliJ IDEA Community Edition  https://www.jetbrains.com/idea/download/  
+Jaspersoft Studio CE  https://community.jaspersoft.com/community-download  
+JasperReports Server CE  
+
+
 
 **Osnova školenia**  
-
-Kurz je určený pre programátorov, ktorí sa chcú naučiť vytvárať reporty  
-pomocou JasperReports v jazyku Java.
-
-Minimálne vstupné vedomosti: základy programovania v jazyku Java.  
-Odporúča sa absolvovať kurzy Java základy jazyka I  
-a Java základy jazyka II.
 
 Úvod
 - Definícia reportu
