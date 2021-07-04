@@ -1,12 +1,12 @@
 # JasperReports-Skolenie
 
 
-
+**Osnova školenia**  
 
 Kurz je určený pre programátorov, ktorí sa chcú naučiť vytvárať reporty  
 pomocou JasperReports v jazyku Java.
 
-Minimálne vstupné vedomosti: základy programovania v jazyku Java. 
+Minimálne vstupné vedomosti: základy programovania v jazyku Java.  
 Odporúča sa absolvovať kurzy Java základy jazyka I  
 a Java základy jazyka II.
 
