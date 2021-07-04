@@ -4,15 +4,20 @@ Dĺžka trvania: 2 x 5 hodín počas dvoch dní
 
 Kurz je určený pre záujemcov, ktorí sa chcú naučiť vytvárať reporty  
 pomocou JasperReports v jazyku Java. Pre kurz je vhodné mať zvládnuté  
-základy programovania. Na školení sa pracuje v prostredí IntelliJ IDEA.  
+základy programovania. 
+
+Na školení sa pracuje v prostredí IntelliJ IDEA. Výuka prebieha na projektoch  
+v rámci IntelliJ IDEA. Následne sa príklad demonštruje tiež v Jaspersoft Studio.  
 
 Je potrebné mať naištalované nasledujúce nástroje:
 
-IntelliJ IDEA Community Edition  https://www.jetbrains.com/idea/download/  
+IntelliJ IDEA Community Edition  https://www.jetbrains.com/idea/download  
 Jaspersoft Studio CE  https://community.jaspersoft.com/community-download  
-JasperReports Server CE  
+JasperReports Server CE  https://community.jaspersoft.com/community-download  
+PostreSQL https://www.enterprisedb.com/downloads/postgres-postgresql-downloads  
 
-
+Tieto nástroje je možné v prípade potreby nainštalovať aj počas výuky,  
+ako súčasť školenia.  
 
 **Osnova školenia**  
 
