@@ -15,6 +15,7 @@ IntelliJ IDEA Community Edition  https://www.jetbrains.com/idea/download
 Jaspersoft Studio CE  https://community.jaspersoft.com/community-download  
 JasperReports Server CE  https://community.jaspersoft.com/community-download  
 PostreSQL https://www.enterprisedb.com/downloads/postgres-postgresql-downloads  
+pgAdmin https://www.pgadmin.org/download/  
 
 Tieto nástroje je možné v prípade potreby nainštalovať aj počas výuky,  
 ako súčasť školenia.  
