@@ -1,4 +1,4 @@
-# JasperReports-Skolenie
+# Školenie JasperReports 
 
 Dĺžka trvania: 2 x 5 hodín počas dvoch dní  
 
