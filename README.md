@@ -20,14 +20,14 @@ pgAdmin https://www.pgadmin.org/download/
 Tieto nástroje je možné v prípade potreby nainštalovať aj počas výuky,  
 ako súčasť školenia.  
 
-**Osnova školenia**  
+## Osnova školenia
 
-Úvod
+### Úvod
 - Definícia reportu
 - JasperReports knižnica
 - JasperSoft Studio
 
-Fázy tvorby reportu  
+### Fázy tvorby reportu  
  - dizajn, kompilácia, naplnenie dátami, export
  
 Rozvrhnutie reportu
