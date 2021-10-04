@@ -42,6 +42,12 @@
 IF($F{region} == null, "N/A", $F{region})
 ```
 
+## Sorting 
+
+```xml
+<sortField name="Name" order="Descending"/>
+```
+
 ## Page numbers 
 
 ```xml
