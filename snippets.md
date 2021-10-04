@@ -36,6 +36,12 @@
 </filterExpression>
 ```
 
+## Expressions 
+
+```
+IF($F{region} == null,  "N/A", $F{region})
+```
+
 ## Page numbers 
 
 ```xml
