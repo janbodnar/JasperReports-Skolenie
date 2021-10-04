@@ -35,7 +35,8 @@
 ## No data
 
 ```xml
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" ... name="countries" pageWidth="595" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" ... name="countries" pageWidth="595" 
+              pageHeight="842" whenNoDataType="NoDataSection" ...>
 ...
 <noData>
   <band height="50">
