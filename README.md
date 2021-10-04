@@ -30,19 +30,19 @@ ako súčasť školenia.
 ### Fázy tvorby reportu  
  - dizajn, kompilácia, naplnenie dátami, export
  
-Rozvrhnutie reportu
+### Rozvrhnutie reportu
  - title, detail, column header, column footer, summary, 
    page header, page footer, no data
 
-Elementy reportu
+### Elementy reportu
  - static text, text field, image, list, table
 
-Export reportu do rôznych formátov
+### Export reportu do rôznych formátov
 - PDF, HTML, CSV, XLS
 
 Polia, parametre, premenné a výrazy
 
-Dátové zdroje
+### Dátové zdroje
  - JRResultSetDataSource, JRBeanCollectionDataSource, 
    RMapArrayDataSource, JRCsvDataSource
  - tvorba vlastného dátového zdroja
@@ -51,7 +51,7 @@ Práca so štýlmi
 Filtrovanie a zoraďovanie dát
 Internacionalizácia reportu
 
-Pokročilejšie nástroje
+### Pokročilejšie nástroje
 - Skriptlety
 - SubDatasety
 - Subreporty
