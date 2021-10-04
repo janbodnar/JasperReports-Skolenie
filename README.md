@@ -30,11 +30,20 @@ ako súčasť školenia.
 - JasperSoft Studio
 
 ### Fázy tvorby reportu  
- - dizajn, kompilácia, naplnenie dátami, export
+ - dizajn
+ - kompilácia
+ - naplnenie dátami 
+ - export
  
 ### Rozvrhnutie reportu
- - title, detail, column header, column footer, summary, 
-   page header, page footer, no data
+ - title
+ - detail 
+ - column header,
+ - column footer
+ - summary 
+ - page header
+ - page footer
+ - no data
 
 ### Elementy reportu
  - static text, text field, image, list, table
