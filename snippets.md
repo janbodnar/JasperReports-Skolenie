@@ -10,3 +10,16 @@
   </conditionalStyle>
 </style>
   ```
+
+```xml
+<style name="alt">
+    <conditionalStyle>
+        <conditionExpression>
+            <![CDATA[$V{COLUMN_COUNT} % 2 == 0]]>
+        </conditionExpression>
+
+        <style isBold="true"/>
+
+    </conditionalStyle>
+</style>
+```
