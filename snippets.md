@@ -24,6 +24,18 @@
 </summary>
 ```
 
+## Filter expression
+
+```xml
+<field name="Price" class="java.lang.Integer">
+    <fieldDescription><![CDATA[price]]></fieldDescription>
+</field>
+
+<filterExpression>
+    <![CDATA[$F{Price} > 50000]]>
+</filterExpression>
+```
+
 ## Page numbers 
 
 ```xml
