@@ -23,3 +23,26 @@
     </conditionalStyle>
 </style>
 ```
+
+## Parameter 
+
+```xml 
+<parameter name="minPopulation" class="java.lang.Long"/>
+...
+<filterExpression><![CDATA[$F{population} > $P{minPopulation}]]></filterExpression>
+```
+
+## No data
+
+```xml
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" ... name="countries" pageWidth="595" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+...
+<noData>
+  <band height="50">
+    <staticText>
+      <reportElement x="174" y="15" width="100" height="30"/>
+      <text><![CDATA[No data found]]></text>
+    </staticText>
+  </band>
+</noData>
+```
