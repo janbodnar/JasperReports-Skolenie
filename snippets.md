@@ -1,5 +1,28 @@
 # Snippets
 
+## Average variable 
+
+```xml
+<variable name="avg" class="java.lang.Integer" calculation="Average">
+    <variableExpression><![CDATA[$F{Price}]]></variableExpression>
+</variable>
+...
+<summary>
+    <band height="55">
+        <staticText>
+            <reportElement x="0" y="40" width="120" height="15"/>
+            <text><![CDATA[The average price is:]]></text>
+        </staticText>
+        <textField>
+            <reportElement x="125" y="40" width="50" height="15"/>
+            <textElement/>
+            <textFieldExpression class="java.lang.Integer">
+                <![CDATA[$V{avg}]]>
+            </textFieldExpression>
+        </textField>
+    </band>
+</summary>
+```
 
 ## Page numbers 
 
