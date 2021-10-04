@@ -1,5 +1,29 @@
 # Snippets
 
+
+## Page numbers 
+
+```xml
+  <pageFooter>
+      <band height="60">
+          <textField evaluationTime="Now">
+              <reportElement x="0" y="0" width="40" height="30"/>
+              <textElement textAlignment="Left"/>
+              <textFieldExpression class="java.lang.String">
+                  <![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+          </textField>
+
+          <textField evaluationTime="Report">
+              <reportElement x="45" y="0" width="50" height="30"/>
+              <textElement textAlignment="Left"/>
+              <textFieldExpression class="java.lang.String"><![CDATA["of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+          </textField>
+
+      </band>
+  </pageFooter>
+```
+
+
 ## Conditional style
 
 ```xml
