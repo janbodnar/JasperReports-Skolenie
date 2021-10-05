@@ -36,6 +36,19 @@
 </filterExpression>
 ```
 
+## Date pattern 
+
+```xml
+<summary>
+    <band height="47" splitType="Stretch">
+        <textField pattern="MMMM d, yyyy">
+            <reportElement x="10" y="8" width="100" height="30"/>
+            <textFieldExpression><![CDATA[TODAY()]]></textFieldExpression>
+        </textField>
+    </band>
+</summary>
+```
+
 ## Expressions 
 
 ```
