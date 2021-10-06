@@ -55,6 +55,10 @@
 IF($F{region} == null, "N/A", $F{region})
 ```
 
+```
+$F{region} == null ? "N/A" : $F{region}
+```
+
 ## Print when expression
 
 For `OR` function we need *jasperreports-functions*  
