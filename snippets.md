@@ -67,6 +67,16 @@ IF($F{region} == null, "N/A", $F{region})
 </textField>
 ```
 
+## Break
+
+```xml
+<break>
+    <reportElement x="0" y="30" width="100" height="1">
+        <printWhenExpression><![CDATA[$V{COLUMN_COUNT} == 7]]></printWhenExpression>
+    </reportElement>
+</break>
+```
+
 
 ## Sorting 
 
