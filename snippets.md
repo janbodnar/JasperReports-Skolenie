@@ -55,6 +55,19 @@
 IF($F{region} == null, "N/A", $F{region})
 ```
 
+## Blank when null
+
+```xml
+<textField isBlankWhenNull="true">
+    <reportElement x="240" y="0" width="100" height="30"/>
+    <textElement textAlignment="Right" verticalAlignment="Middle"/>
+    <textFieldExpression class="java.lang.Integer">
+        <![CDATA[$F{region}]]>
+    </textFieldExpression>
+</textField>
+```
+
+
 ## Sorting 
 
 ```xml
