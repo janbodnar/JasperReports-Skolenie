@@ -165,6 +165,17 @@ For `OR` function we need *jasperreports-functions*
 </noData>
 ```
 
+## Image
+
+```xml
+<image>
+    <reportElement x="0" y="0" width="250" height="200"/>
+    <imageExpression>
+        <![CDATA["src/main/resources/sid.jpg"]]>
+    </imageExpression>
+</image>
+```
+
 ## PieChart
 
 ```xml
