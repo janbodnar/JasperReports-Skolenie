@@ -55,6 +55,16 @@
 IF($F{region} == null, "N/A", $F{region})
 ```
 
+## Print when expression
+
+For `OR` function we need *jasperreports-functions*  
+
+```xml
+<printWhenExpression>
+    <![CDATA[ OR($F{Name}.startsWith("B"), $F{Name}.startsWith("A")) ]]>
+</printWhenExpression>
+```
+
 ## Blank when null
 
 ```xml
