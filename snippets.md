@@ -169,6 +169,28 @@ For `OR` function we need *jasperreports-functions*
 </noData>
 ```
 
+## Evalutation time
+
+Title is not evaluated to the variable if we do not change the evaluation time  
+
+```xml
+<variable name="title" class="java.lang.String">
+    <variableExpression><![CDATA["Customers"]]></variableExpression>
+</variable>
+...
+<title>
+    <band height="79" splitType="Stretch">
+        <textField evaluationTime="Report">
+            <reportElement x="190" y="24" width="100" height="30"/>
+            <textElement textAlignment="Center" verticalAlignment="Middle">
+                <font size="14" isBold="true"/>
+            </textElement>
+            <textFieldExpression><![CDATA[$V{title}]]></textFieldExpression>
+        </textField>
+    </band>
+</title>
+```
+
 ## Image
 
 ```xml
