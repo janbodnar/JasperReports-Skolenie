@@ -18,7 +18,8 @@ The subreport must be compiled into `.jasper` file with `JasperCompileManager.co
 We refer to the compiled file in the `<subreportExpression>`.  
 
 ```xml
-<parameter name="customerId" class="java.lang.Integer" isForPrompting="false"/>
+<parameter name="customerId" isForPrompting="false"/>
 ```
 The `customerId` from the master report to the subreport is passed in the `<subreportParameterExpression>`.  
-The parameter's `isForPrompting` attribute is set to `false`.
+The parameter's `isForPrompting` attribute is set to `false`.  
+(Not that in the `customers` table, the `customerId` is a string. 
