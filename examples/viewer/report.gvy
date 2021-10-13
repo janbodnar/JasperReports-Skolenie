@@ -29,7 +29,7 @@ def countries = [
 
 def ds = new JRBeanCollectionDataSource(countries)
 
-def xmlFile = 'report2.xml'
+def xmlFile = 'report.xml'
 def jreport = JasperCompileManager.compileReport(xmlFile)
 
 def params = [:]
