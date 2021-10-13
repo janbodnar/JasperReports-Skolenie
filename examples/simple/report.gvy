@@ -5,7 +5,7 @@ import net.sf.jasperreports.engine.JasperFillManager
 import net.sf.jasperreports.engine.JasperExportManager
 import net.sf.jasperreports.engine.data.JREmptyDataSource
 
-def xmlFile = 'simple.jrxml'
+def xmlFile = 'simple.xml'
 def jrReport = JasperCompileManager.compileReport(xmlFile)
 
 def params = [:]
