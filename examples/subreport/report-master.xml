@@ -5,8 +5,6 @@
     name="report-master" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" 
     rightMargin="20" topMargin="20" bottomMargin="20">
 
-    <parameter name="customerId" class="java.lang.Integer" isForPrompting="false"/>
-
     <queryString language="SQL">
         <![CDATA[SELECT customer_id,
     company_name,
