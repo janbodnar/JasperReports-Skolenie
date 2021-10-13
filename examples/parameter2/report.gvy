@@ -23,11 +23,11 @@ Sql.withInstance(url, user, password, driver) { sql ->
 
     def ds = new JRBeanCollectionDataSource(res)
 
-    def xmlFile = "report2.xml"
+    def xmlFile = "report.xml"
     def jrReport = JasperCompileManager.compileReport(xmlFile);
 
     def params = [:]
     def jasperPrint = JasperFillManager.fillReport(jrReport, params, ds)
 
-    JasperExportManager.exportReportToPdfFile(jasperPrint, "report2.pdf")
+    JasperExportManager.exportReportToPdfFile(jasperPrint, "report.pdf")
 }
