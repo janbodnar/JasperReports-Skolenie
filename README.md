@@ -70,3 +70,16 @@ pgAdmin https://www.pgadmin.org/download/
 - Kontingenčné, krížové tabuľky
 
 
+### The cars2.csv fields:
+
+* mpg - Miles/(US) gallon
+* cyl - # of cyllinders
+* disp - displacement (cu.in.)
+* hp - gross horsepower
+* dtrat - rear axle ration
+* wt - weight (1000 lbs)
+* qsec - 1/4 mile time
+* vs - Engine (0 - V-shaped, 1 - straight)
+* am - transmission (0 - automatic, 1 - manual)
+* gear - # of forward gears
+* carb - # of carburators  
