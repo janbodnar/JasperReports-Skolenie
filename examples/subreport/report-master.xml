@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" 
+    name="report-master" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" 
+    rightMargin="20" topMargin="20" bottomMargin="20">
+
+    <parameter name="customerId" class="java.lang.Integer" isForPrompting="false"/>
+
+    <queryString language="SQL">
+        <![CDATA[SELECT customer_id,
+    company_name,
+    address,
+    city,
+    country
+FROM customers]]>
+    </queryString>
+
+    <field name="customer_id"/>
+    <field name="company_name"/>
+    <field name="address"/>
+    <field name="city"/>
+    <field name="country"/>
+
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+
+
+    <pageHeader>
+        <band height="35" splitType="Stretch"/>
+    </pageHeader>
+
+    <columnHeader>
+        <band height="61" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="111" height="30"/>
+                <text><![CDATA[customer_id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="111" y="0" width="111" height="30"/>
+                <text><![CDATA[company_name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="222" y="0" width="111" height="30"/>
+                <text><![CDATA[address]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="333" y="0" width="111" height="30"/>
+                <text><![CDATA[city]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="444" y="0" width="111" height="30"/>
+                <text><![CDATA[country]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+
+    <detail>
+        <band height="270" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="0" width="111" height="30"/>
+                <textFieldExpression><![CDATA[$F{customer_id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="111" y="0" width="111" height="30"/>
+                <textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="222" y="0" width="111" height="30"/>
+                <textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="333" y="0" width="111" height="30"/>
+                <textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="444" y="0" width="111" height="30"/>
+                <textFieldExpression><![CDATA[$F{country}]]></textFieldExpression>
+            </textField>
+
+            <subreport>
+                <reportElement x="0" y="40" width="200" height="40"/>
+                <subreportParameter name="customerId">
+                    <subreportParameterExpression><![CDATA[$F{customer_id}]]></subreportParameterExpression>
+                </subreportParameter>
+                <connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+                <subreportExpression><![CDATA["report_sub.jasper"]]></subreportExpression>
+            </subreport>
+            
+        </band>
+    </detail>
+
+</jasperReport>
