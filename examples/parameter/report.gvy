@@ -25,3 +25,5 @@ def params = ['country': country_input]
 
 def jrPrint = JasperFillManager.fillReport(jrReport, params, sql.connection)
 JasperExportManager.exportReportToPdfFile(jrPrint, 'report.pdf')
+
+sql.close()
