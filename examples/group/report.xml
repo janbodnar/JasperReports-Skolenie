@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+    name="groups" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20"
+    topMargin="20" bottomMargin="20">
+
+    <field name="name" class="java.lang.String"/>
+    <field name="mpg" class="java.lang.Double"/>
+    <field name="cyl" class="java.lang.Integer"/>
+    <field name="disp" class="java.lang.Double"/>
+    <field name="hp" class="java.lang.Integer"/>
+    <field name="drat" class="java.lang.Double"/>
+    <field name="wt" class="java.lang.Double"/>
+    <field name="qsec" class="java.lang.Double"/>
+    <field name="vs" class="java.lang.Integer"/>
+    <field name="am" class="java.lang.Integer"/>
+    <field name="gear" class="java.lang.Integer"/>
+    <field name="carb" class="java.lang.Integer"/>
+    <sortField name="am"/>
+
+    <group name="am_group" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+    
+        <groupExpression><![CDATA[$F{am}]]></groupExpression>
+        <groupHeader>
+            <band height="42">
+
+                <textField> 
+                    <reportElement x="0" y="5" width="100" height="30"/>
+                    <textElement>
+                        <font isBold="true"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[ $F{am} == 0 ? "Automatic" : "Manual" ]]></textFieldExpression>
+                </textField>
+
+                <line direction="BottomUp">
+                    <reportElement x="0" y="21" width="569" height="1">
+                        <printWhenExpression><![CDATA[$V{COLUMN_COUNT} == $V{am_group_COUNT}]]></printWhenExpression>
+                    </reportElement>
+                </line>
+            </band>
+        </groupHeader>
+
+        <groupFooter>
+            <band height="52">
+                <textField>
+                    <reportElement x="0" y="11" width="100" height="30"/>
+                    <textElement>
+                        <font isBold="true"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$V{am_group_COUNT}]]></textFieldExpression>
+                </textField>
+            </band>
+        </groupFooter>
+
+    </group>
+
+    <columnHeader>
+        <band height="44" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="49" height="30"/>
+                <text><![CDATA[name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="58" y="0" width="40" height="30"/>
+                <text><![CDATA[mpg]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="104" y="0" width="46" height="30"/>
+                <text><![CDATA[cyl]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="150" y="0" width="38" height="30"/>
+                <text><![CDATA[disp]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="198" y="0" width="46" height="30"/>
+                <text><![CDATA[hp]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="244" y="0" width="46" height="30"/>
+                <text><![CDATA[drat]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="290" y="0" width="46" height="30"/>
+                <text><![CDATA[wt]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="340" y="0" width="64" height="30"/>
+                <text><![CDATA[qsec]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="410" y="0" width="20" height="30"/>
+                <text><![CDATA[vs]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="450" y="0" width="26" height="30"/>
+                <text><![CDATA[am]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="490" y="0" width="32" height="30"/>
+                <text><![CDATA[gear]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="530" y="0" width="38" height="30"/>
+                <text><![CDATA[carb]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+
+    <detail>
+        <band height="49" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="0" width="49" height="30"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="58" y="0" width="46" height="30"/>
+                <textFieldExpression><![CDATA[$F{mpg}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="104" y="0" width="46" height="30"/>
+                <textFieldExpression><![CDATA[$F{cyl}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="150" y="0" width="38" height="30"/>
+                <textFieldExpression><![CDATA[$F{disp}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="198" y="0" width="46" height="30"/>
+                <textFieldExpression><![CDATA[$F{hp}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="244" y="0" width="46" height="30"/>
+                <textFieldExpression><![CDATA[$F{drat}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="290" y="0" width="46" height="30"/>
+                <textFieldExpression><![CDATA[$F{wt}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="340" y="0" width="64" height="30"/>
+                <textFieldExpression><![CDATA[$F{qsec}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="410" y="0" width="20" height="30"/>
+                <textFieldExpression><![CDATA[$F{vs}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="450" y="0" width="26" height="30"/>
+                <textFieldExpression><![CDATA[$F{am}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="490" y="0" width="32" height="30"/>
+                <textFieldExpression><![CDATA[$F{gear}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="530" y="0" width="38" height="30"/>
+                <textFieldExpression><![CDATA[$F{carb}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+
+</jasperReport>
