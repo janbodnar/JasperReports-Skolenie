@@ -4,7 +4,8 @@ A group helps to build structure in our data.  It is defined by an expression co
 and variables that define the criteria for inclusion in that group.  
 
 The example divides cars into two groups: automatic and manual transmissions.  
-For correct output, the data must be sorted.  
+For correct output, the data must be sorted. When we create a new group, a new  
+`GROUPNAME_COUNT` variable is created; in our case `am_group_COUNT`.  
 
 ## Group attributes
 
