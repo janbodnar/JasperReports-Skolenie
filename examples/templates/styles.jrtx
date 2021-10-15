@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperTemplate PUBLIC "-//JasperReports//DTD Template//EN" "http://jasperreports.sourceforge.net/dtds/jaspertemplate.dtd">
+
+<jasperTemplate>
+
+    <style name="header" fontSize="10" hAlign="Center" vAlign="Middle" isBold="true"/>
+    <style name="hback" mode="Opaque" backcolor="#546e99"/>
+
+    <style name="row" hAlign="Center" vAlign="Middle"/>
+    <style name="rback" mode="Opaque" backcolor="#E5ECF9"/>
+
+</jasperTemplate>
