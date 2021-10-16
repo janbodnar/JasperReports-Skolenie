@@ -15,4 +15,5 @@ Dynamic styles can be created with conditional expressions.
 ```
 
 The `<conditionalStyle>` and `<conditionExpression>` tags are used to define a conditional style.   
+To display text in bold, we need the `jasperreports-fonts` library.  
 
