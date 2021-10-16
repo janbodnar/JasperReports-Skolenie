@@ -6,7 +6,6 @@ import net.sf.jasperreports.engine.JasperExportManager
 import net.sf.jasperreports.engine.data.JRCsvDataSource
 
 def xmlFile = "report.xml"
-
 def jrReport = JasperCompileManager.compileReport(xmlFile)
 
 // def columnNames = ["id", "name", "price"] as String[]
@@ -17,8 +16,6 @@ ds.setUseFirstRowAsHeader(true)
 // ds.setColumnNames(columnNames)
 
 def params = [:]
+def jrPrint = JasperFillManager.fillReport(jrReport, params, ds)
 
-def jasperPrint = JasperFillManager.fillReport(jrReport, params, ds)
-
-JasperExportManager.exportReportToPdfFile(jasperPrint,
-        "report.pdf")
+JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
