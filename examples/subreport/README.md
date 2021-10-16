@@ -22,4 +22,4 @@ We refer to the compiled file in the `<subreportExpression>`.
 ```
 The `customerId` from the master report to the subreport is passed in the `<subreportParameterExpression>`.  
 The parameter's `isForPrompting` attribute is set to `false`.  
-(Not that in the `customers` table, the `customerId` is a string. 
+(Note that in the `customers` table, the `customerId` is a string. 
