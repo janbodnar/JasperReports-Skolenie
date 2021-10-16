@@ -6,7 +6,7 @@
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
                                     http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-              name="report6" whenNoDataType="AllSectionsNoDetail"
+              name="report" whenNoDataType="AllSectionsNoDetail"
               topMargin="20" bottomMargin="20">
 
     <style name="TableHeader" vAlign="Middle" hAlign="Center" isBold="true"/>
