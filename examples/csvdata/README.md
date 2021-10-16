@@ -16,3 +16,10 @@ def columnNames = ["id", "name", "price"] as String[]
 ds.setColumnNames(columnNames)
 ```
 Alternatively, column names can be set with `setColumnNames`.
+
+```xml
+<field name="id" class="java.lang.Integer"/>
+<field name="name"/>
+<field name="price" class="java.lang.Integer"/>
+```
+Inside the XML template, we refer to the column names via fields.  
