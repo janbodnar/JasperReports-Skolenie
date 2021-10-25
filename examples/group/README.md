@@ -7,6 +7,14 @@ The example divides cars into two groups: automatic and manual transmissions.
 For correct output, the data must be sorted. When we create a new group, a new  
 `GROUPNAME_COUNT` variable is created; in our case `am_group_COUNT`.  
 
+A report group has three elements:
+
+    Group expression − indicates the data that must change to start a new data group
+    Group header − places label at the beginning of the grouped data
+    Group footer − places label at the end of the grouped data
+
+The header and/or footer is optional. 
+
 ## Group attributes
 
 * name - references the group in report expressions by name
