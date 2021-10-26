@@ -6,8 +6,8 @@ Kurz je určený pre záujemcov, ktorí sa chcú naučiť vytvárať reporty
 pomocou JasperReports v jazyku Java alebo Groovy. Pre kurz je vhodné mať zvládnuté  
 základy programovania. 
 
-Na školení sa pracuje v prostredí IntelliJ IDEA. Výuka prebieha na projektoch  
-v rámci IntelliJ IDEA. Následne sa príklad demonštruje tiež v Jaspersoft Studio.  
+Výuka prebieha na projektoch v rámci IntelliJ IDEA alebo VS Code. Následne sa príklad  
+demonštruje tiež v Jaspersoft Studio.  
 
 ## Nástroje
 
