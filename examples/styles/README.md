@@ -15,3 +15,9 @@ They are applied on `<reportElement>` with `style` attributes.
 ```xml
 <reportElement x="0" y="0" width="50" height="15" style="row"/>
  ```
+
+With `isDefault` property we can create a default style.  
+
+```xml  
+<style name="currency" vAlign="Middle" isDefault="true" hAlign="Center" fontSize="7" fontName="DejaVu Sans"/>
+```
