@@ -1,6 +1,7 @@
 # JasperReports CSV dataadapter 
 
 ```xml
+ <!-- <property name="com.jaspersoft.studio.data.defaultdataadapter" value="cars-adapter.xml"/> -->
  <property name="net.sf.jasperreports.data.adapter" value="cars-adapter.xml"/>
 ```
 
