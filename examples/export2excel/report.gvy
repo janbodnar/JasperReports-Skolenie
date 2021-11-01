@@ -55,7 +55,7 @@ def export2Xlsx(jrPrint) {
     // conf.setAutoFitPageHeight(true)
     // conf.setIgnoreCellBorder(true)
     // conf.setShowGridLines(true)
-    // conf.setCollapseRowSpan(false)
+    conf.setCollapseRowSpan(true)
 
     exporter.setConfiguration(conf)
     exporter.exportReport()
