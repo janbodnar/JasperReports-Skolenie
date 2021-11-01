@@ -38,7 +38,7 @@ def jrPrint = JasperFillManager.fillReport(jrReport, params, ds)
 
 export2Xlsx(jrPrint)
 
-JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
+// JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
 
 def export2Xlsx(jrPrint) {
 
