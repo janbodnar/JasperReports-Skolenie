@@ -202,6 +202,21 @@ Title is not evaluated to the variable if we do not change the evaluation time
 </image>
 ```
 
+## Background
+
+```xml
+<background>
+    <band height="802" splitType="Immediate">
+        <staticText>
+            <reportElement mode="Opaque" x="0" y="0" width="555"
+                           height="802" backcolor="#ccffcc"/>
+            <textElement/>
+            <text><![CDATA[]]></text>
+        </staticText>
+    </band>
+</background>
+```
+
 ## PieChart
 
 ```xml
