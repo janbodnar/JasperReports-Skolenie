@@ -202,6 +202,19 @@ Title is not evaluated to the variable if we do not change the evaluation time
 </image>
 ```
 
+## Frame 
+
+```xml
+<frame>
+    <reportElement x="0" y="0" width="350" height="15"/>
+    <box>
+        <topPen lineWidth="1.0" lineStyle="Solid"/>
+        <leftPen lineWidth="1.0" lineStyle="Solid"/>
+        <rightPen lineWidth="1.0" lineStyle="Solid"/>
+    </box>
+</frame>
+```
+
 ## Background
 
 ```xml
