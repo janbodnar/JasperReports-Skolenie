@@ -221,27 +221,28 @@ source. The printing of the other bands depend on the parameters of the report.
 
 ## Report fields
 
-Report fields are elements, which represent mapping of data between datasource
-and report template. Fields can be combined in the report expressions to obtain
-the desired output. A report template can contain zero or more <field> elements.
-When declaring report fields, the data source should supply data corresponding
-to all the fields ddefined in the report template.
+Report fields are elements, which represent mapping of data between datasource  
+and report template. Fields can be combined in the report expressions to obtain  
+the desired output. A report template can contain zero or more &lt;field&gt;  
+elements. When declaring report fields, the data source should supply data  
+corresponding to all the fields ddefined in the report template.  
 
-<reportElement> − These are displayable objects like static texts, text fields,
-images, lines, and rectangles that you put in your report template sections.
+&lt;reportElement&gt; − These are displayable objects like static texts, text  
+fields, images, lines, and rectangles that you put in your report template  
+sections.  
 
 ## Expressions
 
-Report expressions allow us to display calculated data on a report. Calculated
-data is data that is not a static data and is not specifically passed as a
-report parameter or datasource field. Report expressions are built from
-combining report parameters, fields, and static data. The Java language is used
-for writing report expressions by default. Other scripting languages for report
-expressions such as Groovy, JavaScript, or BeanShell are supported by
-JasperReports compilers.
+Report expressions allow us to display calculated data on a report. Calculated  
+data is data that is not a static data and is not specifically passed as a  
+report parameter or datasource field. Report expressions are built from  
+combining report parameters, fields, and static data. The Java language is used  
+for writing report expressions by default. Other scripting languages for report  
+expressions such as Groovy, JavaScript, or BeanShell are supported by  
+JasperReports compilers.  
 
-In a JRXML report template, there are several elements that
-define expressions as:
+In a JRXML report template, there are several elements that  
+define expressions as:  
 
 <variableExpression>
 <initialValueExpression>
