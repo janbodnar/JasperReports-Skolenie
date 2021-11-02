@@ -70,30 +70,29 @@ Javac task. This task scans source folders and looks up for report template
 files (usually having the JRXML file extension) and compiles them into *.jasper
 files which are placed into a destination folder hierarchy.
 
-
 ## Report Sections
-
-JasperReports works with templates that are structured into multiple
-sections, like any traditional reporting tool. A report can contain the
-following sections: background, title, summary, page header, page footer,
-last page footer, column header and column footer.
-
-At report-filling time, the engine iterates through the virtual records
-of the supplied report data source and renders each report section when
-appropriate, depending on each section's defined behavior.
-
-For instance, the detail section is rendered for each record in the data
-source. When page breaks occur, the page header and page footer sections
-are rendered as needed.
-
-Sections are made of one or more bands. Bands are portions of the report
-template that have a specified height and width and can contain report
-elements like lines, rectangles, images, and text fields. These bands
-are filled repeatedly at report-generating time and make
-up the final document.
-
-When declaring the content and layout of a report section, in an
-JRXML report design, use the generic element <band>.
+  
+JasperReports works with templates that are structured into multiple  
+sections, like any traditional reporting tool. A report can contain the  
+following sections: background, title, summary, page header, page footer,  
+last page footer, column header and column footer.  
+  
+At report-filling time, the engine iterates through the virtual records  
+of the supplied report data source and renders each report section when  
+appropriate, depending on each section's defined behavior.  
+  
+For instance, the detail section is rendered for each record in the data  
+source. When page breaks occur, the page header and page footer sections  
+are rendered as needed.  
+  
+Sections are made of one or more bands. Bands are portions of the report  
+template that have a specified height and width and can contain report  
+elements like lines, rectangles, images, and text fields. These bands  
+are filled repeatedly at report-generating time and make  
+up the final document.  
+  
+When declaring the content and layout of a report section, in an  
+JRXML report design, use the generic element <band>.  
 
 
 # Sections
@@ -112,12 +111,12 @@ JRXML report design, use the generic element <band>.
 
 ## Elements
 
-The basic building block of a report is the element. An element is a graphical
-object, such as a text string or a rectangle. In Jaspersoft Studio, the concept
-of line or paragraph does not exist, as it does in word processing programs.
-Everything is created by means of elements, which can contain text, create
-tables, display images, and so on. This approach follows the model used by the
-majority of report authoring tools.
+The basic building block of a report is the element. An element is a graphical  
+object, such as a text string or a rectangle. In Jaspersoft Studio, the concept  
+of line or paragraph does not exist, as it does in word processing programs.  
+Everything is created by means of elements, which can contain text, create  
+tables, display images, and so on. This approach follows the model used by the  
+majority of report authoring tools.  
 
 
 Text fields have an associated expression that is evaluated with every iteration
