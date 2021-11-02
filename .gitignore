@@ -1,3 +1,4 @@
 .clj-kondo/.cache/2021.10.20-SNAPSHOT/lock
 .lsp/.cache/data.mdb
 .lsp/.cache/lock.mdb
+*.gvy~
