@@ -96,16 +96,16 @@ JRXML report design, use the generic element <band>.
 
 # Sections
 
- * <!ELEMENT background (band?)>
- * <!ELEMENT title (band?)>
- * <!ELEMENT pageHeader (band?)>
- * <!ELEMENT columnHeader (band?)>
- * <!ELEMENT detail (band?)>
- * <!ELEMENT columnFooter (band?)>
- * <!ELEMENT pageFooter (band?)>
- * <!ELEMENT lastPageFooter (band?)>
- * <!ELEMENT summary (band?)>
- * <!ELEMENT noData (band?)>
+ * background
+ * title
+ * pageHeader
+ * columnHeader
+ * detail
+ * columnFooter
+ * pageFooter
+ * lastPageFooter
+ * summary
+ * noData
 
 
 ## Elements
@@ -118,106 +118,106 @@ tables, display images, and so on. This approach follows the model used by the
 majority of report authoring tools.  
 
 
-Text fields have an associated expression that is evaluated with every iteration
-in the data source to obtain the text content to be displayed.
+Text fields have an associated expression that is evaluated with every iteration  
+in the data source to obtain the text content to be displayed.  
 
-A frame is an element that can contain other elements and optionally draw a
-border around them. Since a frame is a container of other elements, in the
-document outline view the frame is represented as a node containing other
+A frame is an element that can contain other elements and optionally draw a  
+border around them. Since a frame is a container of other elements, in the  
+document outline view the frame is represented as a node containing other  
 elements.
 
 ## Dataset
 
-The dataset element allows you to define many datasets inside the report,
-each one with its own fields and data source. Every dataset is
-independent from the others, so its fields are separated from the ones
-of the main dataset, and also from the ones of the other datasets
+The dataset element allows you to define many datasets inside the report,  
+each one with its own fields and data source. Every dataset is  
+independent from the others, so its fields are separated from the ones  
+of the main dataset, and also from the ones of the other datasets  
 
-The main report's SQL can only contain one query
+The main report's SQL can only contain one query  
 
-The report can also contain a subdataset but this subdataset can only be
-used in a chart, table, or crosstab of your report. It can not be access
-by the fields in your main report.
+The report can also contain a subdataset but this subdataset can only be  
+used in a chart, table, or crosstab of your report. It can not be access  
+by the fields in your main report.  
 
 
 ## Subreport
 
-A subreport is in fact a normal report that has been incorporated into another
-report. You can overlap subreports or make a subreport that contains other
-subreports, up to any level of nesting. Subreports are compiled and filled just
-like normal reports. Any report template can be used as a subreport when
-incorporated into another report template, without anything inside it having to
-change.
+A subreport is in fact a normal report that has been incorporated into another  
+report. You can overlap subreports or make a subreport that contains other  
+subreports, up to any level of nesting. Subreports are compiled and filled just  
+like normal reports. Any report template can be used as a subreport when  
+incorporated into another report template, without anything inside it having to  
+change.  
 
-A dataset is a concept that lies somewhere between a data source and a
-subreport. Datasets allow the engine to iterate through some virtual records,
-just as data sources do, but they also enable calculations and data grouping
-during this iteration using variables and groups. Because dataset declarations
-contain parameters, fields, variables, and groups, they closely resemble
-subreports, but they completely lack any visual content (that is, they have no
-sections or layout information at the dataset level).
+A dataset is a concept that lies somewhere between a data source and a  
+subreport. Datasets allow the engine to iterate through some virtual records,  
+just as data sources do, but they also enable calculations and data grouping  
+during this iteration using variables and groups. Because dataset declarations  
+contain parameters, fields, variables, and groups, they closely resemble  
+subreports, but they completely lack any visual content (that is, they have no  
+sections or layout information at the dataset level).  
 
 
 ## Band types
 
 Title
 
-The title band is the first visible band. It is created only once and
-can be printed on a separate page.
+The title band is the first visible band. It is created only once and  
+can be printed on a separate page.  
 
 Page header
 
-The page header band allows you to define a page header. It appears on
-all printed pages in the same position defined during the design phase.
-Title and summary bands do not include the page header when printed
-on a separate page.
+The page header band allows you to define a page header. It appears on  
+all printed pages in the same position defined during the design phase.  
+Title and summary bands do not include the page header when printed  
+on a separate page.  
 
 Column Header
 
-The column header band is printed at the beginning of each detail column.
-Usually, labels containing the column names of a tabular report are
-inserted in this band.
+The column header band is printed at the beginning of each detail column.  
+Usually, labels containing the column names of a tabular report are  
+inserted in this band.  
 
 Detail
 
-A detail band corresponds to every record that is read by the datasource
-that feeds the report.
+A detail band corresponds to every record that is read by the datasource  
+that feeds the report.  
 
 Column Footer
 
-The column footer band appears at the end of every column.
+The column footer band appears at the end of every column.  
 
 Page Footer
 
-The page footer band appears on every page where there is a page header.
+The page footer band appears on every page where there is a page header.  
 
 Last Page Footer
 
-If you want to make the last page footer different from the other
-footers, it is possible to use the special
-last page footer band.
+If you want to make the last page footer different from the other  
+footers, it is possible to use the special last page footer band.  
 
 Summary
-The summary band allows you to insert fields concerning total
-calculations, means, or whatever you want to insert at the end of the
-report. In other systems, this band is often named report footer.
+
+The summary band allows you to insert fields concerning total calculations,  
+means, or whatever you want to insert at the end of the report. In other  
+systems, this band is often named report footer.  
 
 Background
 
-Enables to create watermarks and similareffects (such as a frame around
-the whole page). It can have a maximum height equal to the page height.
+Enables to create watermarks and similareffects (such as a frame around  
+the whole page). It can have a maximum height equal to the page height.  
 
 ## Detail
 
-As I remember it, you can see the details band as the "model" for a row/record
-in the report. All elements you put inside the detail band will be repeated for
-each record provided by the JRDatasource. The purpose of the detail band is to
-provide you with a model where you place and configure report elements. The
-details band is indeed the band where each element of the data source is
-reported. The report engine automatically iterates over the data source and
-inserts data into the template of the detail band with respective element of the
-data source. The details band is not printed if you have nothing in the data
-source. The printing of the other bands depend on the parameters of the report.
+As I remember it, you can see the details band as the "model" for a row/record  
+in the report. All elements you put inside the detail band will be repeated for  
+each record provided by the JRDatasource. The purpose of the detail band is to  
+provide you with a model where you place and configure report elements. The  
+details band is indeed the band where each element of the data source is  
+reported. The report engine automatically iterates over the data source and  
+inserts data into the template of the detail band with respective element of the  
+data source. The details band is not printed if you have nothing in the data  
+source. The printing of the other bands depend on the parameters of the report.  
 
 ## Report fields
 
