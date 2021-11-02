@@ -244,36 +244,36 @@ JasperReports compilers.
 In a JRXML report template, there are several elements that  
 define expressions as:  
 
-<variableExpression>
-<initialValueExpression>
-<groupExpression>
-<printWhenExpression>
-<imageExpression>
-<textFieldExpression>
+ * &lt;variableExpression&gt;
+ * &lt;initialValueExpression&gt;
+ * &lt;groupExpression&gt;
+ * &lt;printWhenExpression&gt;
+ * &lt;imageExpression&gt;
+ * &lt;textFieldExpression&gt;
 
-$F{} - refers to fields
-$V{} - refers to fields
-$P{} - refers to parameters
-$R{} - refers to resource bundle
+$F{} - refers to fields  
+$V{} - refers to fields  
+$P{} - refers to parameters  
+$R{} - refers to resource bundle  
 
 
 ## Fields, parameters, variables
 
-Parameters are simple input to JasperReports. You have to define parameters in
-the JasperReport before using them. You can display the value of the variable,
-you can use it as part of boolean expressions and you can even pass it to
-subreports. This can be an input to SQL query.
+Parameters are simple input to JasperReports. You have to define parameters in  
+the JasperReport before using them. You can display the value of the variable,  
+you can use it as part of boolean expressions and you can even pass it to  
+subreports. This can be an input to SQL query.  
 
-Fields are simple variable definitions. You can think of these as instance
-variables of the datasource object thats passed in to the report or they can be
-key names if the datasource is a Map. If you configure JasperReport to create
-the dataset based on SQL, then Fields are the column names of the ResultSet. You
-will use Fields to display the resultset of an executed SQL query.
+Fields are simple variable definitions. You can think of these as instance  
+variables of the datasource object thats passed in to the report or they can be  
+key names if the datasource is a Map. If you configure JasperReport to create  
+the dataset based on SQL, then Fields are the column names of the ResultSet. You  
+will use Fields to display the resultset of an executed SQL query.  
 
-Variables are another kind of variables that live within Jasper Report, they are
-not inputs. They are used to calculate sum or average of certain Field (defined
-above). You can perform many other predefined calculation functions on the
-Fields using Variables.
+Variables are another kind of variables that live within Jasper Report, they are  
+not inputs. They are used to calculate sum or average of certain Field (defined  
+above). You can perform many other predefined calculation functions on the  
+Fields using Variables.  
 
 
 ## The subDataset
