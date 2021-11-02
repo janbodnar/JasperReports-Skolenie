@@ -2,36 +2,35 @@
 
 ## Definitions
 
-A *report* is a document containing information organized in a narrative,
-graphic, or tabular form, prepared on ad hoc, periodic, recurring, regular,
-or as required basis.
+A *report* is a document containing information organized in a narrative,  
+graphic, or tabular form, prepared on ad hoc, periodic, recurring, regular,  
+or as required basis.  
 
-JasperReports is a open-source reporting library. It loads data from a
-data source and creates a report from it. The report is a file in a
- PDF, HTML, RTF, XLS, ODT, CSV, or XML format.
+JasperReports is a open-source reporting library. It loads data from a  
+data source and creates a report from it. The report is a file in a  
+ PDF, HTML, RTF, XLS, ODT, CSV, or XML format.  
 
-The JasperReports Library is the world's most popular open source
-reporting engine. It is entirely written in Java and it is able to use
-data coming from any kind of data source and produce pixel-perfect
-documents that can be viewed, printed or exported in a variety of document
-formats including HTML, PDF, Excel, OpenOffice and Word.
+The JasperReports Library is the world's most popular open source  
+reporting engine. It is entirely written in Java and it is able to use  
+data coming from any kind of data source and produce pixel-perfect  
+documents that can be viewed, printed or exported in a variety of document  
+formats including HTML, PDF, Excel, OpenOffice and Word.  
 
-On April 28, 2014, TIBCO announced it had acquired Jaspersoft
-for approximately $185 million.
+On April 28, 2014, TIBCO announced it had acquired Jaspersoft  
+for approximately $185 million.  
 
 
 # JasperReports library
 
-The JasperReports library is a very powerful and flexible
-report-generating tool that delivers rich content to the screen,
-printer, or file in PDF, HTML, RTF, XLS, ODT, CSV, or XML format.
-The library is written entirely in Java and can be used in a variety
-of Java-enabled applications, including J2EE or web applications,
-to generate dynamic content. Its main purpose
-is to help to create page-oriented, ready-to-print documents in a
-simple and flexible manner
+The JasperReports library is a very powerful and flexible  
+report-generating tool that delivers rich content to the screen,  
+printer, or file in PDF, HTML, RTF, XLS, ODT, CSV, or XML format.  
+The library is written entirely in Java and can be used in a variety  
+of Java-enabled applications, including J2EE or web applications,  
+to generate dynamic content. Its main purpose  
+is to help to create page-oriented, ready-to-print documents in a  
+simple and flexible manner  
 
-***************************************************
 
 JasperViewer - used to display reports. It represents a simple Java
 Swing application that can load and display reports. It is used in
@@ -73,9 +72,8 @@ for report template files (usually having the JRXML file extension) and
 compiles them into *.jasper files which are placed into a destination
 folder hierarchy.
 
-***************************************************
 
-Report Sections
+## Report Sections
 
 JasperReports works with templates that are structured into multiple
 sections, like any traditional reporting tool. A report can contain the
@@ -100,7 +98,7 @@ When declaring the content and layout of a report section, in an
 JRXML report design, use the generic element <band>.
 
 
-Main sections
+# Sections
 
 <!ELEMENT background (band?)>
 <!ELEMENT title (band?)>
@@ -113,10 +111,8 @@ Main sections
 <!ELEMENT summary (band?)>
 <!ELEMENT noData (band?)>
 
-***************************************************
 
-
-Elements
+## Elements
 
 The basic building block of a report is the element. An element is
 a graphical object, such as a text string or a rectangle.
@@ -135,9 +131,7 @@ draw a border around them. Since a frame is a container of other
 elements, in the document outline view the frame is represented as
 a node containing other elements.
 
-***************************************************
-
-Dataset
+## Dataset
 
 The dataset element allows you to define many datasets inside the report,
 each one with its own fields and data source. Every dataset is
@@ -150,27 +144,26 @@ The report can also contain a subdataset but this subdataset can only be
 used in a chart, table, or crosstab of your report. It can not be access
 by the fields in your main report.
 
-***************************************************
 
-Subreport
+## Subreport
 
 A subreport is in fact a normal report that has been incorporated into another
 report. You can overlap subreports or make a subreport that contains other
 subreports, up to any level of nesting. Subreports are compiled and filled just
 like normal reports. Any report template can be used as a subreport when
-incorporated into another report template, without anything inside it having to change.
+incorporated into another report template, without anything inside it having to
+change.
 
-A dataset is a concept that lies somewhere between a data source and a subreport.
-Datasets allow the engine to iterate through some virtual records, just as data sources do,
-but they also enable calculations and data grouping during this iteration using variables
-and groups. Because dataset declarations contain parameters, fields, variables, and
-groups, they closely resemble subreports, but they completely lack any visual content
-(that is, they have no sections or layout information at the dataset level).
+A dataset is a concept that lies somewhere between a data source and a
+subreport. Datasets allow the engine to iterate through some virtual records,
+just as data sources do, but they also enable calculations and data grouping
+during this iteration using variables and groups. Because dataset declarations
+contain parameters, fields, variables, and groups, they closely resemble
+subreports, but they completely lack any visual content (that is, they have no
+sections or layout information at the dataset level).
 
 
-***************************************************
-
-Band types
+## Band types
 
 Title
 
@@ -219,47 +212,38 @@ Background
 Enables to create watermarks and similareffects (such as a frame around
 the whole page). It can have a maximum height equal to the page height.
 
-***************************************************
-
-Detail
+## Detail
 
 As I remember it, you can see the details band as the "model" for a row/record
-in the report. All elements you put inside the detail band will be repeated
-for each record provided by the JRDatasource.
-The purpose of the detail band is to provide you with a model where you place
-and configure report elements.
-The details band is indeed the band where each element of the data source
-is reported. The report engine automatically iterates over the data source
-and inserts data into the template of the detail band with respective
-element of the data source.
-The details band is not printed if you have nothing in the data source.
-The printing of the other bands depend on the parameters of the report.
+in the report. All elements you put inside the detail band will be repeated for
+each record provided by the JRDatasource. The purpose of the detail band is to
+provide you with a model where you place and configure report elements. The
+details band is indeed the band where each element of the data source is
+reported. The report engine automatically iterates over the data source and
+inserts data into the template of the detail band with respective element of the
+data source. The details band is not printed if you have nothing in the data
+source. The printing of the other bands depend on the parameters of the report.
 
-Report fields
+## Report fields
 
-Report fields are elements, which represent mapping of data between
-datasource and report template. Fields can be combined in the report
-expressions to obtain the desired output. A report template can
-contain zero or more <field> elements. When declaring report fields,
-the data source should supply data corresponding to all the fields
-ddefined in the report template.
+Report fields are elements, which represent mapping of data between datasource
+and report template. Fields can be combined in the report expressions to obtain
+the desired output. A report template can contain zero or more <field> elements.
+When declaring report fields, the data source should supply data corresponding
+to all the fields ddefined in the report template.
 
 <reportElement> − These are displayable objects like static texts, text fields,
 images, lines, and rectangles that you put in your report template sections.
 
+## Expressions
 
-*******************************************************
-
-Report expressions
-
-Report expressions allow us to display calculated data on a report.
-Calculated data is data that is not a static data and is not
-specifically passed as a report parameter or datasource field.
-Report expressions are built from combining report parameters, fields,
-and static data. The Java language is used for writing report
-expressions by default. Other scripting languages for report
-expressions such as Groovy, JavaScript, or BeanShell
-are supported by JasperReports compilers.
+Report expressions allow us to display calculated data on a report. Calculated
+data is data that is not a static data and is not specifically passed as a
+report parameter or datasource field. Report expressions are built from
+combining report parameters, fields, and static data. The Java language is used
+for writing report expressions by default. Other scripting languages for report
+expressions such as Groovy, JavaScript, or BeanShell are supported by
+JasperReports compilers.
 
 In a JRXML report template, there are several elements that
 define expressions as:
@@ -276,48 +260,45 @@ $V{} - refers to fields
 $P{} - refers to parameters
 $R{} - refers to resource bundle
 
-*******************************************************
-Fields, parameters, variables
 
-Parameters are simple input to JasperReports. You have to define
-parameters in the JasperReport before using them. You can display the
-value of the variable, you can use it as part of boolean expressions and
-you can even pass it to subreports. This can be an input to SQL query.
+## Fields, parameters, variables
 
-Fields are simple variable definitions. You can think of these as
-instance variables of the datasource object thats passed in to the report
-or they can be key names if the datasource is a Map. If you configure
-JasperReport to create the dataset based on SQL, then Fields are the
-column names of the ResultSet. You will use Fields to display the
-resultset of an executed SQL query.
+Parameters are simple input to JasperReports. You have to define parameters in
+the JasperReport before using them. You can display the value of the variable,
+you can use it as part of boolean expressions and you can even pass it to
+subreports. This can be an input to SQL query.
 
-Variables are another kind of variables that live within Jasper Report,
-they are not inputs. They are used to calculate sum or average of
-certain Field (defined above). You can perform many other predefined
-calculation functions on the Fields using Variables.
+Fields are simple variable definitions. You can think of these as instance
+variables of the datasource object thats passed in to the report or they can be
+key names if the datasource is a Map. If you configure JasperReport to create
+the dataset based on SQL, then Fields are the column names of the ResultSet. You
+will use Fields to display the resultset of an executed SQL query.
 
-**********************************************************
+Variables are another kind of variables that live within Jasper Report, they are
+not inputs. They are used to calculate sum or average of certain Field (defined
+above). You can perform many other predefined calculation functions on the
+Fields using Variables.
 
-subDataset
 
-Subdatasets can have parameters, fields, variables and groups just
-like a report can. Each subdataset can have it's own query, and the
-report can have as many subdatasets as you want.
+## The subDataset
+
+Subdatasets can have parameters, fields, variables and groups just like a report
+can. Each subdataset can have it's own query, and the report can have as many
+subdatasets as you want.
 
 To use a subdataset, you need to define a datasetRun. This can only be
 done inside particular elements: charts, crosstabs, tables and lists.
 We will use a list as it behaves almost exactly like another detail band.
 
-The jr:listContents element is analogous to a detail band element.
-You can place almost any other elements inside.
+The jr:listContents element is analogous to a detail band element. You can place
+almost any other elements inside.
 
-The datasetRun element is much like a subreport element.
-It can have a dataSourceExpression or connectionExpression inside,
-which will change where the data comes from. If neither of these are
-present, the report datasource is used.
+The datasetRun element is much like a subreport element. It can have a
+dataSourceExpression or connectionExpression inside, which will change where the
+data comes from. If neither of these are present, the report datasource is used.
 
-The same subDataset can be used by many datasetRuns, so you can
-easily run a query multiple times with different parameters.
+The same subDataset can be used by many datasetRuns, so you can easily run a
+query multiple times with different parameters.
 
 
 **********************************************************
@@ -344,10 +325,7 @@ c:listContents - this element stores the layout information for list
     entries. The layout will be repeated for each row in the dataset.
     Any JR element may be part of a list content.
 
-
-******************************************************
-
-Scriptlets
+## Scriptlets
 
 There are situations when a complex functionality cannot be achieved
 easily using report expressions or variables. Examples of this may be
@@ -377,10 +355,8 @@ Using Scriptlet we can use user defined functions in jasper reports.
 //in your Java code
 lParameters.put("SubDataSource", mySubDataSource);
 
-******************************************************
 
-
-Multiple queries
+## Multiple queries
 
 When you need to run multiple queries you have the following options:
 
@@ -400,15 +376,7 @@ data from multiple tables you might get away by carefully joining them
 in a single query.
 
 
-******************************************************
-Ivy
-
-The *-> default means that all your module configurations depend on the
-'default' configuration of JasperReports
-
-******************************************************
-
-Datasource          Implementation Class
+## Datasource implementation class
 
 JDBC                net.sf.jasperreports.engine.JRResultSetDataSource
 JavaBean            net.sf.jasperreports.engine.data.JRBeanCollectionDataSource, net.sf.jasperreports.engine.data.JRBeanArrayDataSource
@@ -419,10 +387,8 @@ CSV                 net.sf.jasperreports.engine.data.JRCsvDataSource
 XLS                 net.sf.jasperreports.engine.data.JRXlsDataSource
 Empty               net.sf.jasperreports.engine.JREmptyDataSource
 
-******************************************************
 
-
-Standard print formats
+## Standard print formats
 
 LETTER 612×792
 NOTE 540×720
@@ -456,9 +422,7 @@ HALFLETTER 396×612
 LEDGER 1224×792
 
 
-******************************************************
-
-Dependencies
+## Dependencies
 
 antlr - (ANother Tool for Language Recognition) is a powerful parser
          generator for reading, processing, executing, or translating
