@@ -278,26 +278,25 @@ Fields using Variables.
 
 ## The subDataset
 
-Subdatasets can have parameters, fields, variables and groups just like a report
-can. Each subdataset can have it's own query, and the report can have as many
-subdatasets as you want.
+Subdatasets can have parameters, fields, variables and groups just like a report  
+can. Each subdataset can have it's own query, and the report can have as many  
+subdatasets as you want.  
 
-To use a subdataset, you need to define a datasetRun. This can only be
-done inside particular elements: charts, crosstabs, tables and lists.
-We will use a list as it behaves almost exactly like another detail band.
+To use a subdataset, you need to define a *datasetRun*. This can only be done  
+inside particular elements: charts, crosstabs, tables and lists. We will use a  
+list as it behaves almost exactly like another detail band.  
 
-The jr:listContents element is analogous to a detail band element. You can place
-almost any other elements inside.
+The *jr:listContents* element is analogous to a detail band element. You can  
+place almost any other elements inside.  
 
-The datasetRun element is much like a subreport element. It can have a
-dataSourceExpression or connectionExpression inside, which will change where the
-data comes from. If neither of these are present, the report datasource is used.
+The *datasetRun* element is much like a subreport element. It can have a  
+dataSourceExpression or connectionExpression inside, which will change where the  
+data comes from. If neither of these are present, the report datasource is used.  
 
-The same subDataset can be used by many datasetRuns, so you can easily run a
-query multiple times with different parameters.
+The same subDataset can be used by many datasetRuns, so you can easily run a  
+query multiple times with different parameters.  
 
-
-**********************************************************
+--- 
 
 When $!P{} is used in your report query, JasperReports will not use this
 parameter content through standard JDBC driver parameter binding process.
@@ -306,47 +305,47 @@ to meet their report design need.
 
 http://www.tothenew.com/blog/passing-optional-parameters-in-jasper-reports/
 
-**********************************************************
+---
 
-List component
+## List component
 
-List needs only two elements in order to become functional:
-a dataset run and a list content.
+List needs only two elements in order to become functional: a dataset run and a
+list content.  
 
-jr:datasetRun - the dataset run used to store information about list
-    datasource/connection/subdataset and various useful parameters.
-    The jr: namespace prefix may be omitted in the JRXML template.
+*jr:datasetRun* - the dataset run used to store information about list  
+datasource/connection/subdataset and various useful parameters.  
+The jr: namespace prefix may be omitted in the JRXML template.  
 
-c:listContents - this element stores the layout information for list
-    entries. The layout will be repeated for each row in the dataset.
-    Any JR element may be part of a list content.
+*c:listContents* - this element stores the layout information for list entries.
+The layout will be repeated for each row in the dataset. Any JR element may be  
+part of a list content.  
 
 ## Scriptlets
 
-There are situations when a complex functionality cannot be achieved
-easily using report expressions or variables. Examples of this may be
-complex String manipulations, building of Maps, or Lists of objects in
-memory or manipulations of dates using 3rd party Java APIs. For such
-situations, JasperReports provides us with a simple and powerful means
-of doing this with Scriptlets.
+There are situations when a complex functionality cannot be achieved easily  
+using report expressions or variables. Examples of this may be complex String  
+manipulations, building of Maps, or Lists of objects in memory or manipulations  
+of dates using 3rd party Java APIs. For such situations, JasperReports provides  
+us with a simple and powerful means of doing this with Scriptlets.  
 
-Scriptlets are sequences of Java code that are executed every time a
-report event occurs. Values of report variables can be affected
-through scriptlets.
+Scriptlets are sequences of Java code that are executed every time a report  
+event occurs. Values of report variables can be affected through scriptlets.  
 
-Scriptlet is a Java class which extends either one of:
+Scriptlet is a Java class which extends either one of:  
 
 1. net.sf.jasperreports.engine.JRAbstractScriptlet
 2. net.sf.jasperreports.engine.JRDefaultScriptlet.
 
-Using Scriptlet we can use user defined functions in jasper reports.
+Using Scriptlet we can use user defined functions in jasper reports.  
 
-******************************************************
+---
+```xml
 <parameter name="SubDataSource" class="net.sf.jasperreports.engine.JRDataSource"/>
 ...
 <datasetRun subDataset="..">
   <dataSourceExpression>$P{SubDataSource}</dataSourceExpression>
 </datasetRun>
+```
 
 //in your Java code
 lParameters.put("SubDataSource", mySubDataSource);
@@ -374,49 +373,49 @@ in a single query.
 
 ## Datasource implementation class
 
-JDBC                net.sf.jasperreports.engine.JRResultSetDataSource
-JavaBean            net.sf.jasperreports.engine.data.JRBeanCollectionDataSource, net.sf.jasperreports.engine.data.JRBeanArrayDataSource
-Map-based           net.sf.jasperreports.engine.data.JRMapArrayDataSource, net.sf.jasperreports.engine.data.JRMapCollectionDataSource
-TableModel          net.sf.jasperreports.engine.data.JRTableModelDataSource
-XML                 net.sf.jasperreports.engine.data.JRXmlDataSource
-CSV                 net.sf.jasperreports.engine.data.JRCsvDataSource
-XLS                 net.sf.jasperreports.engine.data.JRXlsDataSource
-Empty               net.sf.jasperreports.engine.JREmptyDataSource
+JDBC             net.sf.jasperreports.engine.JRResultSetDataSource
+JavaBean         net.sf.jasperreports.engine.data.JRBeanCollectionDataSource, net.sf.jasperreports.engine.data.JRBeanArrayDataSource
+Map-based        net.sf.jasperreports.engine.data.JRMapArrayDataSource, net.sf.jasperreports.engine.data.JRMapCollectionDataSource
+TableModel       net.sf.jasperreports.engine.data.JRTableModelDataSource
+XML              net.sf.jasperreports.engine.data.JRXmlDataSource
+CSV              net.sf.jasperreports.engine.data.JRCsvDataSource
+XLS              net.sf.jasperreports.engine.data.JRXlsDataSource
+Empty            net.sf.jasperreports.engine.JREmptyDataSource
 
 
 ## Standard print formats
 
-LETTER 612×792
-NOTE 540×720
-LEGAL 612×1008
-A0 2380×3368
-A1 1684×2380
-A2 1190×1684
-A3 842×1190
-A4 595×842
-A5 421×595
-A6 297×421
-A7 210×297
-A8 148×210
-A9 105×148
-A10 74×105
-B0 2836×4008
-B1 2004×2836
-B2 1418×2004
-B3 1002×1418
-B4 709×1002
-B5 501×709
-ARCH_E 2592×3456
-ARCH_D 1728×2592
-ARCH_C 1296×1728
-ARCH_B 864×1296
-ARCH_A 648×864
-FLSA 612×936
-FLSE 612×936
-HALFLETTER 396×612
-11X17 792×1224
-LEDGER 1224×792
-
+LETTER 612×792  
+NOTE 540×720  
+LEGAL 612×1008  
+A0 2380×3368  
+A1 1684×2380  
+A2 1190×1684  
+A3 842×1190  
+A4 595×842  
+A5 421×595  
+A6 297×421  
+A7 210×297  
+A8 148×210  
+A9 105×148  
+A10 74×105  
+B0 2836×4008  
+B1 2004×2836  
+B2 1418×2004  
+B3 1002×1418  
+B4 709×1002  
+B5 501×709  
+ARCH_E 2592×3456  
+ARCH_D 1728×2592  
+ARCH_C 1296×1728  
+ARCH_B 864×1296  
+ARCH_A 648×864  
+FLSA 612×936  
+FLSE 612×936  
+HALFLETTER 396×612  
+11X17 792×1224  
+LEDGER 1224×792  
+ 
 
 ## Dependencies
 
