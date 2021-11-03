@@ -2,3 +2,4 @@
 .lsp/.cache/data.mdb
 .lsp/.cache/lock.mdb
 *.gvy~
+*.pdf
