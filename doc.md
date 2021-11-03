@@ -118,6 +118,18 @@ the ambiguity between identically named elements or attributes can be resolved.
 </xs:schema>
 ```
 
+## PostgreSQL
+
+PostgreSQL is a powerful, open source object-relational database system. It is a  
+multi-user database management system. It runs on multiple platforms including  
+Linux, FreeBSD, Solaris, Microsoft Windows, and Mac OS X. PostgreSQL is  
+developed by the PostgreSQL Global Development Group.  
+
+```shell
+$ pg_ctl -D data start
+$ pg_ctl -D data stop
+```
+
 ## JasperReports classes
 
 JasperViewer - used to display reports. It represents a simple Java Swing  
