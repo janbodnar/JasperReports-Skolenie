@@ -126,8 +126,8 @@ Linux, FreeBSD, Solaris, Microsoft Windows, and Mac OS X. PostgreSQL is
 developed by the PostgreSQL Global Development Group.  
 
 ```shell
-$ pg_ctl -D data start
-$ pg_ctl -D data stop
+C:\Users\Jano\opt\postgre>bin\pg_ctl.exe -D data start
+C:\Users\Jano\opt\postgre>bin\pg_ctl.exe -D data stop
 ```
 
 ## JasperReports classes
