@@ -352,7 +352,7 @@ define expressions as:
  * &lt;textFieldExpression&gt;
 
 $F{} - refers to fields  
-$V{} - refers to fields  
+$V{} - refers to variables  
 $P{} - refers to parameters  
 $R{} - refers to resource bundle  
 
