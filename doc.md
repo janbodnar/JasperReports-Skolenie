@@ -67,20 +67,18 @@ tools such as the compilers and debuggers necessary for developing Java
 applications. We need to install JDK to build and run our Java programs.  
 
 ## XML
-
-## XML 
  
  
-Extensible Markup Language (XML) is a popular human-readable and machine-readable 
-markup language. The design goals of XML emphasize simplicity, generality, and usability 
-across the Internet. It is a textual data format with strong support via Unicode for 
-different human languages. Originally designed for large-scale electronic publishing, 
-XML is widely used in the exchange of a large variety of data among software components, 
-systems, and enterprices.
+Extensible Markup Language (XML) is a popular human-readable and  
+machine-readable markup language. The design goals of XML emphasize simplicity,  
+generality, and usability across the Internet. It is a textual data format with  
+strong support via Unicode for different human languages. Originally designed  
+for large-scale electronic publishing, XML is widely used in the exchange of a  
+large variety of data among software components, systems, and enterprices.  
 
-XML is an industry standard developed by World Wide Web Consortium (W3C). It is
-not tied to any programming language or software vendor. XML is extensible,
-platform-independent, and supports internationalization. 
+XML is an industry standard developed by World Wide Web Consortium (W3C). It is  
+not tied to any programming language or software vendor. XML is extensible,  
+platform-independent, and supports internationalization.  
 
 
 ### Well-formed and valid XML
