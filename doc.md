@@ -66,6 +66,60 @@ JDK (Java Development Kit) is a superset of the JRE. It contains JRE and
 tools such as the compilers and debuggers necessary for developing Java  
 applications. We need to install JDK to build and run our Java programs.  
 
+## XML
+
+## XML 
+ 
+ 
+Extensible Markup Language (XML) is a popular human-readable and machine-readable 
+markup language. The design goals of XML emphasize simplicity, generality, and usability 
+across the Internet. It is a textual data format with strong support via Unicode for 
+different human languages. Originally designed for large-scale electronic publishing, 
+XML is widely used in the exchange of a large variety of data among software components, 
+systems, and enterprices.
+
+XML is an industry standard developed by World Wide Web Consortium (W3C). It is
+not tied to any programming language or software vendor. XML is extensible,
+platform-independent, and supports internationalization. 
+
+
+### Well-formed and valid XML
+
+For an application to accept an XML document, it must be both well formed and  
+valid. These terms are defined in the XML 1.0 Recommendation, with XML Schema  
+extending the meaning of valid.  
+  
+To be well formed, an XML document must follow these rules:  
+
+ -   The document must have exactly one root element.
+ -   Every element is either self closing (like &lt;br /&gt;) or has a closing tag.
+ -   Elements are nested properly (i.e., &lt;p&gt;&lt;em&gt;&lt;/p&gt;&lt;/em&gt; is not allowed).
+ -   The document has no angle brackets that are not part of tags. Characters &lt;, &gt;, 
+     and & outside of tags are replaced by &lt;, &gt;, and &amp;.
+  -  Attribute values are quoted.
+
+
+To be valid, a document must be well formed, it must have an associated DTD or  
+schema, and it must comply with that DTD or schema. Ensuring a document is well  
+formed is easy. In this article, we focus on ensuring our documents are valid.  
+
+### XML namespace
+
+XML Namespaces provide a method to avoid element name conflicts.  
+XML namespaces are used for providing uniquely named elements and attributes  
+in an XML document. They are defined in a W3C recommendation.  
+An XML instance may contain element or attribute names from more  
+than one XML vocabulary. If each vocabulary is given a namespace,  
+the ambiguity between identically named elements or attributes can be resolved.  
+
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="books"/>
+
+</xs:schema>
+```
+
 ## JasperReports classes
 
 JasperViewer - used to display reports. It represents a simple Java Swing  
