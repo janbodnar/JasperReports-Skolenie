@@ -45,14 +45,14 @@ developed by Oracle corporation.
 
 ### JVM
 
-Java virtual machine (JVM) executes Java bytecode. The JVM is included in the
-JRE and JDK. Java source code is written in files with the .java extension. The
-javac Java compiler will compile the Java source code into the Java bytecode;
-the compiled files have the .class extension. This bytecode is executed by JVM.
-The java tool is a launcher for Java applications. Oracle's JVM is called
-HotSpot. HotSpot is a Java virtual machine for desktops and servers. It has
-advanced techniques such as just-in-time compilation and adaptive optimization
-designed to improve performance. 
+Java virtual machine (JVM) executes Java bytecode. The JVM is included in the  
+JRE and JDK. Java source code is written in files with the .java extension. The  
+*javac* Java compiler will compile the Java source code into the Java *bytecode*;  
+the compiled files have the *.class* extension. This bytecode is executed by JVM.  
+The java tool is a launcher for Java applications. Oracle's JVM is called  
+HotSpot. HotSpot is a Java virtual machine for desktops and servers. It has  
+advanced techniques such as just-in-time compilation and adaptive optimization  
+designed to improve performance.   
 
 ### JRE
 
