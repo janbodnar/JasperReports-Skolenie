@@ -10,7 +10,7 @@ import groovy.sql.Sql
 
 def url = 'jdbc:postgresql://localhost:5432/testdb'
 def user = 'postgres'
-def password = 'postgres'
+def password = ''
 def driver = 'org.postgresql.Driver'
 
 def sql = Sql.withInstance(url, user, password, driver) { sql ->
