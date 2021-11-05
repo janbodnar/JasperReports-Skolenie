@@ -14,41 +14,30 @@
     <style name="background1" mode="Opaque" backcolor="#8DCCE0"/>
     <style name="background2" mode="Opaque" backcolor="#E5ECF9"/>
    
-    <field name="CountryName" class="java.lang.String">
-        <fieldDescription><![CDATA[name]]></fieldDescription>
-    </field>
-
-    <field name="Population" class="java.lang.Long">
-        <fieldDescription><![CDATA[population]]></fieldDescription>
-    </field>
+    <field name="name"/>
+    <field name="population" class="java.lang.Long"/>
 
     <columnHeader>
         <band height="20">
          
             <staticText>
                 <reportElement x="0" y="3" width="300" height="15" style="background1"/>
-            
                 <box>
                     <bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
                 </box>
-            
-                <textElement />
+                <textElement/>
                 <text><![CDATA[]]></text>
             </staticText>
 
             <staticText>
                 <reportElement x="15" y="5" width="130" height="15" style="boldtext"/>
-            
                 <textElement textAlignment="Left"/>
-            
                 <text><![CDATA[Country]]></text>
             </staticText>
          
             <staticText>
                 <reportElement x="150" y="5" width="130" height="15" style="boldtext"/>
-            
                 <textElement textAlignment="Right"/>
-            
                 <text><![CDATA[Population]]></text>
             </staticText>
   
@@ -60,13 +49,11 @@
          
             <staticText>
                 <reportElement x="0" y="0" width="300" height="14" style="background2"/>
-            
                 <box>
                     <bottomPen lineWidth="0.5" lineColor="#CCCCCC"/>
                 </box>
-            
-                <textElement />
-                <text><![CDATA[]]> </text>
+                <textElement/>
+                <text><![CDATA[]]></text>
             </staticText>
 
             <textField>
@@ -74,8 +61,8 @@
             
                 <textElement textAlignment="Left" verticalAlignment="Middle"/>
             
-                <textFieldExpression class = "java.lang.String">
-                    <![CDATA[$F{CountryName}]]>
+                <textFieldExpression>
+                    <![CDATA[$F{name}]]>
                 </textFieldExpression>
             </textField>
          
@@ -84,7 +71,7 @@
                 <textElement textAlignment="Right" verticalAlignment="Middle"/>
             
                 <textFieldExpression class="java.lang.Long">
-                    <![CDATA[$F{Population}]]>
+                    <![CDATA[$F{population}]]>
                 </textFieldExpression>
             </textField>
 
