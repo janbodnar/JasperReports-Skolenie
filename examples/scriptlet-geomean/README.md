@@ -1,0 +1,1 @@
+# JasperReports scriptlet geometric mean 
