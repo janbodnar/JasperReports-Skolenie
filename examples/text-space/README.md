@@ -13,4 +13,4 @@ def processText(txt) {
 ```
 
 The `processText` function splits the text by one or more newline characters & builds  
-a new text where the text is one newline after the title.  
+a new string where the content is one newline after the title.  
