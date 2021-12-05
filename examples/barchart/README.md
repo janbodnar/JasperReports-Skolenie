@@ -1,6 +1,6 @@
 # JasperReports Bar chart
 
-The example creates a bar chart. It is not ideal; the bars are very thin & they are misplaced. Check the 
+The example creates a bar chart. It is not ideal; the bars are very thin & they are misplaced. Check the  
 chartcustomizer example for a fix.  
 
 ```xml
