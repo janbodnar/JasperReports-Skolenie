@@ -1,6 +1,7 @@
 # JasperReports scriptlet median
 
-Calculate median value with a custom scriptlet.  
+Calculate median value with a custom scriptlet.  To calculate the median value, we utilize the 
+`commons-math3` library.  
 
 A *scriptlet* is a Groovy class which provides some additional functionality to JasperReports.  
 
