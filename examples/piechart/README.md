@@ -1,5 +1,7 @@
 # JasperReports Pie chart
 
+## Pie chart example
+
 ```xml
 <summary>
     <band height="260" splitType="Stretch">
@@ -22,4 +24,23 @@
         </pieChart>
     </band>
 </summary>
+```
+
+## Chart title 
+
+```xml
+<chartTitle>
+    <titleExpression>
+       <![CDATA["Employees from countries"]]>
+    </titleExpression>
+</chartTitle>
+```
+
+## Percentages
+
+```xml
+<piePlot isShowLabels="true" labelFormat="{2}" legendLabelFormat="{0}">
+    <plot/>
+    <itemLabel/>
+</piePlot>
 ```
