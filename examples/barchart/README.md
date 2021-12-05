@@ -17,7 +17,6 @@
             <seriesExpression><![CDATA[$F{name}]]></seriesExpression>
             <categoryExpression><![CDATA[$F{name}]]></categoryExpression>
             <valueExpression><![CDATA[$F{price}]]></valueExpression>
-            <labelExpression><![CDATA[$F{name}]]></labelExpression>
         </categorySeries>
     </categoryDataset>
     <barPlot>
