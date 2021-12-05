@@ -1,6 +1,7 @@
 # JasperReports scriptlet geometric mean 
 
 A *scriptlet* is a Groovy class which provides some additional functionality to JasperReports.  
+To calculate the median value, we utilize the `commons-math3` library.   
 
 A scriptlet is referred with the scriptlet tag:  
 
