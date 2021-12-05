@@ -1,0 +1,63 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport xmlns = "http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
+                                    http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="report" topMargin="20" bottomMargin="20">
+
+    <parameter name="text1"/>
+    <parameter name="text2"/>
+    <parameter name="text3"/>
+
+    <detail>
+        <band height="550">
+
+        <rectangle>
+            <reportElement x="0" y="0" width="330" height="140"/>
+        </rectangle>
+
+        <textField isStretchWithOverflow="true">
+            <reportElement stretchType="RelativeToTallestObject" x="8" y="0" width="310" height="140" />
+            <textElement textAlignment="Left" verticalAlignment="Middle"/>
+            <textFieldExpression>
+                <![CDATA[$P{text1}]]>
+            </textFieldExpression>
+        </textField>
+
+        <frame>
+            <reportElement x="0" y="180" width="330" height="140"/>
+            <box>
+                <topPen lineWidth="1.0" lineStyle="Solid"/>
+                <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                <rightPen lineWidth="1.0" lineStyle="Solid"/>
+            </box>
+        </frame>
+
+        <textField>
+            <reportElement stretchType="RelativeToBandHeight" x="8" y="180" width="310" height="140" />
+            <textElement textAlignment="Left" verticalAlignment="Middle"/>
+            <textFieldExpression>
+                <![CDATA[$P{text2}]]>
+            </textFieldExpression>
+        </textField>
+
+        <rectangle>
+            <reportElement stretchType="RelativeToBandHeight" x="0" y="360" width="330" height="140"/>
+        </rectangle>
+
+        <textField isStretchWithOverflow="true">
+            <reportElement x="8" y="360" width="310" height="140" />
+            <textElement textAlignment="Left" verticalAlignment="Middle"/>
+            <textFieldExpression>
+                <![CDATA[$P{text3}]]>
+            </textFieldExpression>
+        </textField>
+
+        </band>
+    </detail>
+
+</jasperReport>
