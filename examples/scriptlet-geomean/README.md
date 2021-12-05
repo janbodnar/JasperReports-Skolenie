@@ -10,7 +10,7 @@ A scriptlet is referred with the scriptlet tag:
 
 Scriptlet derives from the `JRDefaultScriptlet` class. 
 
-```
+```groovy
 class MyScriptlet extends JRDefaultScriptlet {
 ```
 
