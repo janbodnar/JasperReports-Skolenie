@@ -1,4 +1,4 @@
-# JasperReports chartcustomizer 
+# JasperReports chart customizer 
 
 The example fixes some issues with a bar chart using a chartcustomizer.  
 
