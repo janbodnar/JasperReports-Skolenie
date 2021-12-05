@@ -7,7 +7,7 @@
     <band height="260" splitType="Stretch">
         <pieChart>
             <chart evaluationTime="Report">
-                <reportElement x="212" y="60" width="200" height="200"/>
+                <reportElement x="100" y="60" width="250" height="200"/>
                 <chartTitle/>
                 <chartSubtitle/>
                 <chartLegend/>
