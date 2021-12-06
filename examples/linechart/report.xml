@@ -22,7 +22,7 @@
                     <chartLegend/>
                 </chart>
                 <categoryDataset>
-                    <dataset resetType="Report"/>
+                    <dataset/>
                     <categorySeries>
                         <seriesExpression><![CDATA["Temperatures"]]></seriesExpression>
                         <categoryExpression><![CDATA[ $F{date} ]]></categoryExpression>
