@@ -3,8 +3,10 @@
 ```xml
 <lineChart>
     <chart evaluationTime="Report">
-        <reportElement x="10" y="80" width="540" height="350"/>
-        <chartTitle/>
+        <reportElement x="20" y="20" width="540" height="400"/>
+        <chartTitle position="Top">
+            <titleExpression><![CDATA["Line chart"]]></titleExpression>
+        </chartTitle>
         <chartSubtitle/>
         <chartLegend/>
     </chart>
@@ -18,11 +20,13 @@
     </categoryDataset>
     <linePlot>
         <plot/>
+        <categoryAxisLabelExpression><![CDATA["Date"]]></categoryAxisLabelExpression>
         <categoryAxisFormat>
-            <axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+            <axisFormat/>
         </categoryAxisFormat>
+        <valueAxisLabelExpression><![CDATA["Temperature"]]></valueAxisLabelExpression>
         <valueAxisFormat>
-            <axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+            <axisFormat/>
         </valueAxisFormat>
     </linePlot>
 </lineChart>
