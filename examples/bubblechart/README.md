@@ -1,5 +1,8 @@
 # JasperReports Bubble chart
 
+Bubble chart example. Data retrieved from an in-memory H2 database.  
+
+
 ```xml
 <bubbleChart>
     <chart evaluationTime="Report">
