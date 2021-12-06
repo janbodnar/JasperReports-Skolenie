@@ -44,7 +44,8 @@ Manual scaling by multiplying the z values by 5.
 ```
 
 Adjusting scales with these expressions:
-```
+
+```xml
 <domainAxisMinValueExpression><![CDATA[0]]></domainAxisMinValueExpression>
 <domainAxisMaxValueExpression><![CDATA[80]]></domainAxisMaxValueExpression>
 <rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
