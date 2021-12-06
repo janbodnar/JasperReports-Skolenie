@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports 
+            http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+        name="report" pageWidth="595" pageHeight="842" columnWidth="555" 
+        leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+
+    <field name="id" class="java.lang.Long"/>
+    <field name="date"/>
+    <field name="val" class="java.lang.Double"/>
+
+    <columnHeader>
+        <band height="50">
+            <staticText>
+                <reportElement x="0" y="0" width="141" height="30"/>
+                <text><![CDATA[id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="141" y="0" width="138" height="30"/>
+                <text><![CDATA[date]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="279" y="0" width="138" height="30"/>
+                <text><![CDATA[temperature]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="35" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="0" width="141" height="30"/>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="141" y="0" width="138" height="30"/>
+                <textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="279" y="0" width="138" height="30"/>
+                <textFieldExpression><![CDATA[$F{val}]]></textFieldExpression>
+            </textField>
+          </band>
+    </detail>
+    <summary>
+        <band height="450" splitType="Stretch">
+            <lineChart>
+                <chart evaluationTime="Report">
+                    <reportElement x="10" y="80" width="540" height="350"/>
+                    <chartTitle/>
+                    <chartSubtitle/>
+                    <chartLegend/>
+                </chart>
+                <categoryDataset>
+                    <dataset resetType="Report"/>
+                    <categorySeries>
+                        <seriesExpression><![CDATA["Temperatures"]]></seriesExpression>
+                        <categoryExpression><![CDATA[ $F{date} ]]></categoryExpression>
+                        <valueExpression><![CDATA[ $F{val} ]]></valueExpression>
+                    </categorySeries>
+                </categoryDataset>
+                <linePlot>
+                    <plot/>
+                    <categoryAxisFormat>
+                        <axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+                    </categoryAxisFormat>
+                    <valueAxisFormat>
+                        <axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+                    </valueAxisFormat>
+                </linePlot>
+            </lineChart>
+        </band>
+    </summary>
+</jasperReport>
+
+
