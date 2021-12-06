@@ -1,6 +1,6 @@
 # JasperReports multi-axis chart
 
-The example shows two line charts. We use `axisFormat` to visually separate separate the two lines.  
+The example shows two line charts. We use `axisFormat` to visually separate the two line charts.    
 
 ```xml
 <multiAxisChart>
