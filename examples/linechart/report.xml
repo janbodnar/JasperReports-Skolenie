@@ -10,44 +10,14 @@
     <field name="date"/>
     <field name="val" class="java.lang.Double"/>
 
-    <columnHeader>
-        <band height="50">
-            <staticText>
-                <reportElement x="0" y="0" width="141" height="30"/>
-                <text><![CDATA[id]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="141" y="0" width="138" height="30"/>
-                <text><![CDATA[date]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="279" y="0" width="138" height="30"/>
-                <text><![CDATA[temperature]]></text>
-            </staticText>
-        </band>
-    </columnHeader>
-    <detail>
-        <band height="35" splitType="Stretch">
-            <textField>
-                <reportElement x="0" y="0" width="141" height="30"/>
-                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
-            </textField>
-            <textField>
-                <reportElement x="141" y="0" width="138" height="30"/>
-                <textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
-            </textField>
-            <textField>
-                <reportElement x="279" y="0" width="138" height="30"/>
-                <textFieldExpression><![CDATA[$F{val}]]></textFieldExpression>
-            </textField>
-          </band>
-    </detail>
     <summary>
         <band height="450" splitType="Stretch">
             <lineChart>
                 <chart evaluationTime="Report">
-                    <reportElement x="10" y="80" width="540" height="350"/>
-                    <chartTitle/>
+                    <reportElement x="20" y="20" width="540" height="400"/>
+                    <chartTitle position="Top">
+                        <titleExpression><![CDATA["Line chart"]]></titleExpression>
+                    </chartTitle>
                     <chartSubtitle/>
                     <chartLegend/>
                 </chart>
@@ -61,16 +31,16 @@
                 </categoryDataset>
                 <linePlot>
                     <plot/>
+                    <categoryAxisLabelExpression><![CDATA["Date"]]></categoryAxisLabelExpression>
                     <categoryAxisFormat>
-                        <axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+                        <axisFormat/>
                     </categoryAxisFormat>
+                    <valueAxisLabelExpression><![CDATA["Temperature"]]></valueAxisLabelExpression>
                     <valueAxisFormat>
-                        <axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+                        <axisFormat/>
                     </valueAxisFormat>
                 </linePlot>
             </lineChart>
         </band>
     </summary>
 </jasperReport>
-
-
