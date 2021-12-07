@@ -1,0 +1,1 @@
+# JasperReports Russian date locale
