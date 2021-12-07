@@ -1,0 +1,1 @@
+# JasperReports scatter chart
