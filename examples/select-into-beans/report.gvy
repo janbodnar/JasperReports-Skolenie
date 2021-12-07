@@ -7,7 +7,6 @@ package com.zetcode
 import net.sf.jasperreports.engine.JasperCompileManager
 import net.sf.jasperreports.engine.JasperExportManager
 import net.sf.jasperreports.engine.JasperFillManager
-import net.sf.jasperreports.engine.JRResultSetDataSource
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource
 
 import groovy.sql.Sql
