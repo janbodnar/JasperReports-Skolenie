@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+            http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+        name="report" pageWidth="595" pageHeight="842" columnWidth="555"
+        leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+
+    <field name="id" class="java.lang.Long"/>
+    <field name="date"/>
+    <field name="val" class="java.lang.Double"/>
+
+    <summary>
+        <band height="450" splitType="Stretch">
+            <scatterChart>
+                <chart isShowLegend="true">
+                    <reportElement x="0" y="0" width="450" height="400"/>
+                    <chartTitle/>
+                    <chartSubtitle/>
+                    <chartLegend/>
+                </chart>
+                <xyDataset>
+                    <dataset/>
+                    <xySeries>
+                        <seriesExpression><![CDATA[ "Temperatures" ]]></seriesExpression>
+                        <xValueExpression><![CDATA[ $F{id} ]]></xValueExpression>
+                        <yValueExpression><![CDATA[ $F{val} ]]></yValueExpression>
+                    </xySeries>
+                </xyDataset>
+                <scatterPlot isShowLines="false" isShowShapes="true">
+                    <plot backcolor="#959696" backgroundAlpha="0.1"/>
+                    <xAxisFormat>
+                        <axisFormat/>
+                    </xAxisFormat>
+                    <yAxisFormat>
+                        <axisFormat/>
+                    </yAxisFormat>
+                </scatterPlot>
+            </scatterChart>
+        </band>
+    </summary>
+</jasperReport>
+
+
