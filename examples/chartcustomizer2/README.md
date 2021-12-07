@@ -24,7 +24,7 @@ class ScatterChartCustomizer implements JRChartCustomizer {
 We do the customization in the `customize` method.  
 
 ```xml
-<chart isShowLegend="true" customizerClass="com.zetcode.ScatterChartCustomizer" >
+<chart isShowLegend="true" customizerClass="com.zetcode.ScatterChartCustomizer">
 ```
 
 We set the customizer class in the `customizerClass` attribute. 
