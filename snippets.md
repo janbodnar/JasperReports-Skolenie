@@ -256,4 +256,70 @@ Title is not evaluated to the variable if we do not change the evaluation time
 </summary>
 ```
 
+## Precision
 
+```groovy
+Double x = 0.1d + 0.1d + 0.1d
+Float y = 0.3 + 0 + 0
+
+def z = 0.3 + 0.3 + 0.3
+
+println x.class
+println y.class
+println z.class
+
+println x 
+println y
+println x == y
+println y == z
+```
+
+```java
+import java.math.BigDecimal;
+
+public class Precision {
+
+    public static void main(String[] args) {
+
+        double x = 0.3;
+        double y = 0.1 + 0.1 + 0.1;
+
+        System.out.println(x);
+        System.out.println(y);
+
+        System.out.println(x == y);
+
+        System.out.println("--------------------------");
+
+        var a = new BigDecimal("0.3");
+        var b = new BigDecimal("0.1").add(new BigDecimal("0.1").add(new BigDecimal("0.1")));
+
+        System.out.println(a);
+        System.out.println(b);
+
+        System.out.println(a.equals(b));
+
+        System.out.println("--------------------------");
+
+        BigDecimal c = new BigDecimal("1.46");
+        BigDecimal sum = new BigDecimal("0");
+
+        for (int i=0; i<100_000; i++) {
+
+            sum = sum.add(c);
+        }
+
+        System.out.println(sum);
+
+        float c2 = 1.46f;
+        float sum2 = 0;
+
+        for (int i=0; i<100_000; i++) {
+
+            sum2 = sum2 + c2;
+        }
+
+        System.out.println(sum2);
+    }
+}
+```
