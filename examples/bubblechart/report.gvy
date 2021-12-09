@@ -20,7 +20,7 @@ INSERT INTO products(name, price, quantity, market_share) VALUES('Product C', 18
 '''
 
 def url = "jdbc:h2:mem:"
-def sql = Sql.withInstance(url) { sql ->
+Sql.withInstance(url) { sql ->
 
     sql.execute(createTable)
 
