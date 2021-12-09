@@ -1,0 +1,1 @@
+# JasperReports JSON data adapter
