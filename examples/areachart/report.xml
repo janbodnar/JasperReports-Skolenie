@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+            http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+        name="report" pageWidth="595" pageHeight="842" columnWidth="555"
+        leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+
+    <field name="id" class="java.lang.Long"/>
+    <field name="year"/>
+    <field name="consumption" class="java.lang.Integer"/>
+
+    <summary>
+        <band height="500">
+              <areaChart>
+                <chart evaluationTime="Report">
+                    <reportElement x="0" y="0" width="450" height="400"/>
+                    <chartTitle/>
+                    <chartSubtitle/>
+                    <chartLegend/>
+                </chart>
+                <categoryDataset>
+                    <dataset resetType="Report"/>
+                    <categorySeries>
+                        <seriesExpression><![CDATA["Oil Consumption"]]></seriesExpression>
+                        <categoryExpression><![CDATA[ $F{year} ]]></categoryExpression>
+                        <valueExpression><![CDATA[ $F{consumption} ]]></valueExpression>
+                    </categorySeries>
+                </categoryDataset>
+                <areaPlot>
+                    <plot/>
+                    <categoryAxisFormat>
+                        <axisFormat/>
+                    </categoryAxisFormat>
+                    <valueAxisFormat>
+                        <axisFormat/>
+                    </valueAxisFormat>
+                    <domainAxisMinValueExpression>0</domainAxisMinValueExpression>
+                    <domainAxisMaxValueExpression>10</domainAxisMaxValueExpression>
+                </areaPlot>
+            </areaChart>
+        </band>
+    </summary>
+</jasperReport>
