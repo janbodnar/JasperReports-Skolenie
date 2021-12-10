@@ -26,7 +26,7 @@ INSERT INTO cars(name, price) VALUES('Volkswagen', 21600);
 '''
 
 def url = "jdbc:h2:mem:"
-def sql = Sql.withInstance(url) { sql ->
+Sql.withInstance(url) { sql ->
 
     sql.execute(createTable)
 
