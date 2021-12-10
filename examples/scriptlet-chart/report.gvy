@@ -22,8 +22,7 @@ def jrReport = JasperCompileManager.compileReport(xmlFile)
 def langs = [ "Python": 30.2, "C#": 10.0, "Java": 17.5, 
     "PHP": 8.5, "Clojure": 1.1]
 
-def params = [:]
-params.put("langs", langs)
+def params = ["langs": langs]
 
 def jrPrint = JasperFillManager.fillReport(jrReport,
         params, new JREmptyDataSource())
