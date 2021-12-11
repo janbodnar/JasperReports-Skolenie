@@ -1,3 +1,5 @@
+package com.zetcode
+
 @Grab(group='net.sf.jasperreports', module='jasperreports', version='6.17.0')
 @Grab(group='org.postgresql', module='postgresql', version='42.2.23')
 @GrabConfig(systemClassLoader=true)
@@ -13,7 +15,7 @@ def user = 'postgres'
 def password = ''
 def driver = 'org.postgresql.Driver'
 
-def sql = Sql.withInstance(url, user, password, driver) { sql ->
+Sql.withInstance(url, user, password, driver) { sql ->
 
     def xmlFile = 'report.xml'
     def jrReport = JasperCompileManager.compileReport(xmlFile)

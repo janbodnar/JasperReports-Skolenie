@@ -5,21 +5,21 @@
 import net.sf.jasperreports.engine.JasperCompileManager
 import net.sf.jasperreports.engine.JasperFillManager
 import net.sf.jasperreports.engine.JasperExportManager
+import net.sf.jasperreports.engine.JREmptyDataSource
 import groovy.sql.Sql
 
-def url = 'jdbc:postgresql://localhost:5432/northwind'
+def url = 'jdbc:postgresql://localhost:5432/testdb'
 def user = 'postgres'
 def password = ''
 def driver = 'org.postgresql.Driver'
 
-def sql = Sql.newInstance(url, user, password, driver)
+Sql.withInstance(url, user, password, driver) { sql ->
 
-def xmlFile = "report.xml"
+    def xmlFile = 'report.xml'
+    def jrReport = JasperCompileManager.compileReport(xmlFile)
+    def params = [:]
 
-def jrReport = JasperCompileManager.compileReport(xmlFile)
-def params = [:]
-def jrPrint = JasperFillManager.fillReport(jrReport, params, sql.connection)
-
-JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
-
-sql.close()
+    def jrPrint = JasperFillManager.fillReport(jrReport, params, 
+            sql.connection)
+    JasperExportManager.exportReportToPdfFile(jrPrint, 'report.pdf')
+}
