@@ -38,7 +38,7 @@ pgAdmin https://www.pgadmin.org/download/
 ### Rozvrhnutie reportu
  - title
  - detail 
- - column header,
+ - column header
  - column footer
  - summary 
  - page header
