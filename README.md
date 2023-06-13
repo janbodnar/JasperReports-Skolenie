@@ -6,8 +6,7 @@ Kurz je určený pre záujemcov, ktorí sa chcú naučiť vytvárať reporty
 pomocou JasperReports v jazyku Java alebo Groovy. Pre kurz je vhodné mať zvládnuté  
 základy programovania. 
 
-Výuka prebieha na projektoch v rámci IntelliJ IDEA alebo VS Code. Následne sa príklad  
-demonštruje tiež v Jaspersoft Studio.  
+Výuka prebieha na projektoch v rámci IntelliJ IDEA alebo VS Code. 
 
 ## Nástroje
 
@@ -17,7 +16,6 @@ Groovy https://groovy.apache.org/download.html
 VS Code https://code.visualstudio.com/download  
 IntelliJ IDEA Community Edition  https://www.jetbrains.com/idea/download  
 Jaspersoft Studio CE  https://community.jaspersoft.com/community-download  
-JasperReports Server CE  https://community.jaspersoft.com/community-download  
 PostreSQL https://www.enterprisedb.com/downloads/postgres-postgresql-downloads  
 pgAdmin https://www.pgadmin.org/download/  
 
