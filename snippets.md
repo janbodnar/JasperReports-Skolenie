@@ -191,6 +191,14 @@ Title is not evaluated to the variable if we do not change the evaluation time
 </title>
 ```
 
+## Lint
+
+```xml
+<line>
+    <reportElement x="5" y="7" width="300" height="1"/>
+</line>
+```
+
 ## Image
 
 ```xml
