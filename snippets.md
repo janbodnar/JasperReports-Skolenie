@@ -191,7 +191,7 @@ Title is not evaluated to the variable if we do not change the evaluation time
 </title>
 ```
 
-## Lint
+## Line
 
 ```xml
 <line>
