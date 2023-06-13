@@ -199,6 +199,18 @@ Title is not evaluated to the variable if we do not change the evaluation time
 </line>
 ```
 
+## Ellipse
+
+```xml
+<summary>
+    <band height="120">
+        <ellipse>
+            <reportElement x="5" y="5" width="100" height="80"/>
+        </ellipse>
+    </band>
+</summary>
+```
+
 ## Image
 
 ```xml
