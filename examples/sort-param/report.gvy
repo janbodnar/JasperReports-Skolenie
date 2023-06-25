@@ -37,14 +37,14 @@ def cars = [
 
 def ds = new JRBeanCollectionDataSource(cars)
 
-def sortList = []
+def fields = []
 def sortField = new JRDesignSortField()
 sortField.setName("Price")
 sortField.setOrder(SortOrderEnum.ASCENDING)
 sortField.setType(SortFieldTypeEnum.FIELD)
-sortList.add(sortField)
+fields.add(sortField)
 
-params.put(JRParameter.SORT_FIELDS, sortList)
+params.put(JRParameter.SORT_FIELDS, fields)
 
 def jrPrint = JasperFillManager.fillReport(jrReport, params, ds)
 JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
