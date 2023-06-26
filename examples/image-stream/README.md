@@ -1,5 +1,7 @@
 # Image 
 
+We pass the image to the report as an `InputStream`.  
+
 ```groovy
 def fis = new File("sid.jpg").newInputStream()
 
