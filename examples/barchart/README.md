@@ -11,13 +11,14 @@ chartcustomizer example for a fix.
             <titleExpression><![CDATA["Car prices"]]></titleExpression>
         </chartTitle>
         <chartSubtitle/>
-        <chartLegend/>
+        <chartLegend position="Right"/>
     </chart>
 
     <categoryDataset>
         <dataset resetType="Report"/>
         <categorySeries>
-            <seriesExpression><![CDATA[$F{name}]]></seriesExpression>
+            <!-- <seriesExpression><![CDATA[$F{name}]]></seriesExpression> -->
+            <seriesExpression><![CDATA[$F{name} + ' ' + $F{price}]]></seriesExpression>
             <categoryExpression><![CDATA[$F{name}]]></categoryExpression>
             <valueExpression><![CDATA[$F{price}]]></valueExpression>
         </categorySeries>
