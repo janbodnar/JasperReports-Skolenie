@@ -1,5 +1,6 @@
 # JasperReports Groovy examples
 
+This is the skeleton for a code example  
 
 ```groovy
 @Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
