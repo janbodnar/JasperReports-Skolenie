@@ -8,6 +8,8 @@ keď sa vytvára report pomocou JasperStudio.
 Pre kurz je vhodné mať zvládnuté základy programovania. V prípade potreby sa vieme  
 dohodnúť na rýchlokurze jasyka Groovy.  
 
+Kurz sa *nevenuje* JasperReports Studiu. 
+
 Dĺžka trvania: 2 x 5 hodín počas dvoch dní  
 Výuka prebieha v priestoroch vašej firmy. 
 Cenu školenia vám oznámim, keď ma kontaktujete.  
@@ -30,7 +32,6 @@ pgAdmin https://www.pgadmin.org/download/
 ### Úvod
 - Definícia reportu
 - JasperReports knižnica
-- JasperSoft Studio
 
 ### Fázy tvorby reportu  
  - dizajn
