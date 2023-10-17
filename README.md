@@ -17,7 +17,7 @@ Kontakt na školiteľa: jan.bodnar(at)gmail.com, 0903 102 418.
 
 ## Nástroje
 
-Je potrebné mať naištalované nasledujúce nástroje:  
+Je potrebné mať nainštalované nasledujúce nástroje:  
 
 Groovy https://groovy.apache.org/download.html  
 VS Code https://code.visualstudio.com/download  
