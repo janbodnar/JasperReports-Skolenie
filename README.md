@@ -1,12 +1,12 @@
 # Školenie JasperReports 
 
 
-Firemný kurz je určený pre záujemcov, ktorí sa chcú naučiť vytvárať reporty  
-pomocou knižnice JasperReports v jazyku Groovy. Kurz osvetlí čo sa deje pod povrchom, 
-keď sa vytvára report pomocou JasperStudio. 
+Firemný kurz je určený pre záujemcov, ktorí sa chcú naučiť vytvárať reporty   
+pomocou knižnice JasperReports v jazyku Groovy. Kurz osvetlí čo sa deje pod povrchom,  
+keď sa vytvára report pomocou JasperStudio.  
 
-Pre kurz je vhodné mať zvládnuté základy programovania. V prípade potreby sa vieme 
-dohodnúť na rýchlokurze jasyka Groovy.
+Pre kurz je vhodné mať zvládnuté základy programovania. V prípade potreby sa vieme  
+dohodnúť na rýchlokurze jasyka Groovy.  
 
 Dĺžka trvania: 2 x 5 hodín počas dvoch dní  
 Výuka prebieha v prestoroch firmy. 
