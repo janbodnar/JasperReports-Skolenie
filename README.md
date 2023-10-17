@@ -9,7 +9,7 @@ Pre kurz je vhodné mať zvládnuté základy programovania. V prípade potreby 
 dohodnúť na rýchlokurze jasyka Groovy.  
 
 Dĺžka trvania: 2 x 5 hodín počas dvoch dní  
-Výuka prebieha v prestoroch firmy. 
+Výuka prebieha v priestoroch vašej firmy. 
 Cenu školenia vám oznámim, keď ma kontaktujete.  
 
 Kontakt na školiteľa: jan.bodnar(at)gmail.com, 0903 102 418.
