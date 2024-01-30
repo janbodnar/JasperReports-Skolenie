@@ -6,7 +6,7 @@ pomocou knižnice JasperReports v jazyku Groovy. Kurz osvetlí čo sa deje pod p
 keď sa vytvára report pomocou JasperStudio.  
 
 Pre kurz je vhodné mať zvládnuté základy programovania. V prípade potreby sa vieme  
-dohodnúť na rýchlokurze jasyka Groovy.  
+dohodnúť na rýchlokurze jazyka Groovy.  
 
 Kurz sa *nevenuje* JasperReports Studiu. 
 
