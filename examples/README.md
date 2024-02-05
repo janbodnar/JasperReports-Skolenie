@@ -19,3 +19,10 @@ def jrPrint = JasperFillManager.fillReport(jrReport, params,
 
 JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
 ```
+
+Since JasperReports 6.20.2, we need to add the librepdf library as well.  
+
+```
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.21.0')
+@Grab(group='com.github.librepdf', module='openpdf', version='1.3.39')
+```
