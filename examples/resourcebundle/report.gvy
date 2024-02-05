@@ -1,8 +1,7 @@
 package com.zetcode
 
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.0')
-@Grab(group='net.sf.jasperreports', module='jasperreports-fonts', version='6.20.0')
-@Grab(group='com.lowagie', module='itext', version='4.2.0')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
+@Grab(group='net.sf.jasperreports', module='jasperreports-fonts', version='6.20.1')
 
 import net.sf.jasperreports.engine.JasperCompileManager
 import net.sf.jasperreports.engine.JasperFillManager
