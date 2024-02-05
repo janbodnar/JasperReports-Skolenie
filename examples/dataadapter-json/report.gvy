@@ -1,6 +1,6 @@
 package com.zetcode
 
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.17.0')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
 @Grab(group='org.apache.httpcomponents', module='httpclient', version='4.5.13')
 
 import net.sf.jasperreports.engine.JasperCompileManager

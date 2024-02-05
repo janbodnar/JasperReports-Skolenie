@@ -1,4 +1,4 @@
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.17.0')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
 
 import net.sf.jasperreports.engine.JasperCompileManager
 import net.sf.jasperreports.engine.JasperFillManager

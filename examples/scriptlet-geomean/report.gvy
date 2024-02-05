@@ -1,6 +1,6 @@
 package com.zetcode
 
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.17.0')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
 @Grab(group='org.apache.commons', module='commons-math3', version='3.6.1')
 
 import java.util.List

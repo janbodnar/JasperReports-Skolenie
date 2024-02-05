@@ -1,4 +1,4 @@
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.17.0')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
 @Grab(group='org.apache.poi', module='poi', version='5.0.0')
 @Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
 
