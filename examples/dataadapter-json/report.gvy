@@ -1,6 +1,7 @@
 package com.zetcode
 
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.21.0')
+@Grab(group='com.github.librepdf', module='openpdf', version='1.3.39')
 @Grab(group='org.apache.httpcomponents', module='httpclient', version='4.5.13')
 
 import net.sf.jasperreports.engine.JasperCompileManager

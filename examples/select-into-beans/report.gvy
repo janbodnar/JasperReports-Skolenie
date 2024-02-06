@@ -1,7 +1,8 @@
 package com.zetcode
 
 @GrabConfig(systemClassLoader=true)
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.21.0')
+@Grab(group='com.github.librepdf', module='openpdf', version='1.3.39')
 @Grab(group='com.h2database', module='h2', version='1.4.200')
 
 import net.sf.jasperreports.engine.JasperCompileManager
