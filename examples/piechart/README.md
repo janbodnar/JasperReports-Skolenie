@@ -1,5 +1,9 @@
 # JasperReports pie chart
 
+- {0} item name
+- {1} value
+- {2} percentage
+
 ```xml
 <pieChart>
 
