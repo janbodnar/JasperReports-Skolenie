@@ -40,11 +40,7 @@
         <band height="250">
 
             <componentElement>
-                <reportElement style="Table" x="0" y="10" width="555" height="150"
-                               uuid="c475c968-5a05-4331-8147-5fc24a48070b">
-                    <property name="com.jaspersoft.studio.layout"
-                              value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
-                </reportElement>
+                <reportElement style="Table" x="0" y="10" width="260" height="150"/>
 
                 <c:table xmlns:c="http://jasperreports.sourceforge.net/jasperreports/components"
                          xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
@@ -69,7 +65,7 @@
                             <box>
                                 <bottomPen lineWidth="0.5"/>
                             </box>
-                            <textField isStretchWithOverflow="true">
+                            <textField>
                                 <reportElement x="0" y="0" width="60" height="15" style="TableCell"/>
                                 <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
                             </textField>
