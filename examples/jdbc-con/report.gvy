@@ -13,7 +13,7 @@ def user = 'postgres'
 def password = ''
 def driver = 'org.postgresql.Driver'
 
- Sql.newInstance(url, user, password, driver)
+def sql = Sql.newInstance(url, user, password, driver)
 
 def xmlFile = "report.xml"
 
