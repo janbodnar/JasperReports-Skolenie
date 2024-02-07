@@ -70,6 +70,15 @@ Shows column headers in a report.
 </filterExpression>
 ```
 
+Multiple conditions  
+
+```xml
+<filterExpression>
+    <!-- <![CDATA[$F{price} > 20000 && $F{price} < 50000]]> -->
+    <![CDATA[AND($F{price} > 25000, $F{price} < 50000)]]>
+</filterExpression>
+```
+
 ## Date pattern 
 
 ```xml
