@@ -29,6 +29,11 @@
                 </textFieldExpression>
             </textField>
 
+            <!-- 
+                Add DateTimeFormatter 
+                Add formatted localdatetime from Groovy via parameter
+            -->
+                
         </band>
     </detail>
 
