@@ -310,6 +310,12 @@ Title is not evaluated to the variable if we do not change the evaluation time
 </summary>
 ```
 
+## Format currency correctly
+
+```xml
+<textFieldExpression><![CDATA[NumberFormat.getCurrencyInstance($P{REPORT_LOCALE}).format($V{value})]]></textFieldExpression>
+```
+
 ## Precision
 
 ```groovy
