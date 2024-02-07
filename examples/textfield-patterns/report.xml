@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport xmlns = "http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
+                                    http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="report" topMargin="20" bottomMargin="20">
+
+    <variable name="value" class="java.lang.Integer">
+        <variableExpression><![CDATA[ 155100 ]]></variableExpression>
+    </variable>
+
+    <variable name="today" class="java.util.Date">
+        <variableExpression><![CDATA[ new Date() ]]></variableExpression>
+    </variable>
+
+    <detail>
+        <band height="190">
+
+            <textField pattern="#,##0.00">
+                <reportElement x="5" y="5" width="190" height="15"/>
+                <textElement />
+                <textFieldExpression>
+                    <![CDATA[$V{value}]]>
+                </textFieldExpression>
+            </textField>
+
+            <textField pattern="MMMM d, yyyy">
+                <reportElement x="5" y="45" width="190" height="15"/>
+                <textElement />
+                <textFieldExpression>
+                    <![CDATA[$V{today}]]>
+                </textFieldExpression>
+            </textField>
+
+            <!-- Wrong! 
+                https://stackoverflow.com/questions/8758680/formatting-currency-in-jasper-reports-using-pattern 
+                -->
+            <textField pattern="¤ #,##0.00">
+                <reportElement x="5" y="85" width="190" height="30"/>
+                <textFieldExpression><![CDATA[$V{value}]]></textFieldExpression>
+            </textField>
+
+        </band>
+    </detail>
+
+</jasperReport>
