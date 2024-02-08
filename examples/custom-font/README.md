@@ -1,4 +1,4 @@
-# Custom fond
+# Custom font
 
 TODO
 
