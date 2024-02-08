@@ -12,3 +12,5 @@ TODO
 - https://github.com/arachan/JasperReportsBoot/blob/master/src/main/resources/fonts/fonts.xml
 - https://github.com/thegeekyasian/java-jasper-reports-custom-font/tree/master
 - https://github.com/sistemasaguila/jasper-extension-fonts
+
+michal93401@gmail.com
