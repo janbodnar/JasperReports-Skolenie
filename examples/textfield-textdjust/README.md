@@ -1,5 +1,9 @@
-TE
+# TextField textAlign
 
+Replaces older `isStretchOverflow`
 
+Possible values:  
 
-ScaleFont
+- `CutText` (default)
+- `ScaleFont`
+- `StretchHeight`
