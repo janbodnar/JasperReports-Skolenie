@@ -1,6 +1,6 @@
 # TextField textAdjust
 
-Replaces older `isStretchOverflow`
+Replaces deprecated `isStretchOverflow`
 
 Possible values:  
 
