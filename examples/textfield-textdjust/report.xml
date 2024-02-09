@@ -1,0 +1,54 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport xmlns = "http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
+                                    http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="report" topMargin="20" bottomMargin="20">
+
+    <style name="defFont" isDefault="true" vAlign="Top" hAlign="Left"/>
+
+    <parameter name="text"/>
+
+    <detail>
+        <band height="330">
+
+            <rectangle>
+                <reportElement x="3" y="3" width="490" height="85"/>
+            </rectangle>
+
+            <textField textAdjust="CutText">
+                <reportElement x="5" y="5" width="490" height="80"/>
+                <textFieldExpression>
+                    <![CDATA[$P{text}]]>
+                </textFieldExpression>
+            </textField>
+
+            <rectangle>
+                <reportElement x="3" y="90" width="490" height="105"/>
+            </rectangle>
+
+            <textField textAdjust="StretchHeight">
+                <reportElement x="5" y="95" width="490" height="80"/>
+                <textFieldExpression>
+                    <![CDATA[$P{text}]]>
+                </textFieldExpression>
+            </textField>
+
+            <rectangle>
+                <reportElement x="3" y="200" width="490" height="85"/>
+            </rectangle>
+
+            <textField textAdjust="ScaleFont">
+                <reportElement x="5" y="205" width="490" height="80"/>
+                <textFieldExpression>
+                    <![CDATA[$P{text}]]>
+                </textFieldExpression>
+            </textField>
+
+        </band>
+    </detail>
+
+</jasperReport>
