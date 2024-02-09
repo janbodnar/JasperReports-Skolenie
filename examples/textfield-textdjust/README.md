@@ -1,4 +1,4 @@
-# TextField textAlign
+# TextField textAdjust
 
 Replaces older `isStretchOverflow`
 
