@@ -3,7 +3,8 @@
 This is the skeleton for a code example  
 
 ```groovy
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.20.1')
+@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.21.0')
+@Grab(group='com.github.librepdf', module='openpdf', version='1.3.39')
 
 import net.sf.jasperreports.engine.JasperCompileManager
 import net.sf.jasperreports.engine.JasperFillManager
@@ -18,11 +19,4 @@ def jrPrint = JasperFillManager.fillReport(jrReport, params,
     new JREmptyDataSource())
 
 JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
-```
-
-Since JasperReports 6.20.2, we need to add the librepdf library as well.  
-
-```
-@Grab(group='net.sf.jasperreports', module='jasperreports', version='6.21.0')
-@Grab(group='com.github.librepdf', module='openpdf', version='1.3.39')
 ```
