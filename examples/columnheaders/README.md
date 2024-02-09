@@ -1,5 +1,7 @@
 # Column headers
 
+Column headers are created with the `columnHeader` tag.  The headers are created with `staticText`.  
+
 ```xml
 <columnHeader>
     <band height="18">
