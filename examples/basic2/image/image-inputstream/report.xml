@@ -9,13 +9,13 @@
               whenNoDataType="NoDataSection"
               name="report" topMargin="20" bottomMargin="20">
 
-    <parameter name="mychart" class="java.io.InputStream"/>
+    <parameter name="sidimg" class="java.io.InputStream"/>
 
     <summary>
         <band height="255">
             <image>
                 <reportElement x="0" y="0" width="300" height="250"/>
-                <imageExpression><![CDATA[$P{mychart}]]></imageExpression>
+                <imageExpression><![CDATA[$P{sidimg}]]></imageExpression>
             </image>
         </band>
     </summary>

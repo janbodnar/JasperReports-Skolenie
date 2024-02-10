@@ -15,7 +15,7 @@ def jrReport = JasperCompileManager.compileReport(xmlFile)
 
 def f = new URL(url).openStream()
 
-def params = ["mychart" : f]
+def params = ["myimage" : f]
 def jrPrint = JasperFillManager.fillReport(jrReport, params, new JREmptyDataSource())
 
 JasperExportManager.exportReportToPdfFile(jrPrint, 'report.pdf')

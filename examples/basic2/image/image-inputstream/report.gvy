@@ -11,7 +11,7 @@ def jrReport = JasperCompileManager.compileReport(xmlFile)
 
 def f = new File("sid.jpg").newInputStream()
 
-def params = ["mychart" : f]
+def params = ["sidimg" : f]
 def jrPrint = JasperFillManager.fillReport(jrReport, params, 
     new JREmptyDataSource())
 
