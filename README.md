@@ -11,8 +11,8 @@ dohodnúť na rýchlokurze jazyka Groovy.
 Kurz sa *nevenuje* JasperReports Studiu. 
 
 Dĺžka trvania: 2 x 5 hodín počas dvoch dní  
-<!--- Výuka prebieha v priestoroch vašej firmy. 
-Cenu školenia vám oznámim, keď ma kontaktujete. -->  
+Výuka prebieha v priestoroch vašej firmy.  
+Cenu školenia vám oznámim, keď ma kontaktujete. 
 
 Kontakt na školiteľa: jan.bodnar(at)gmail.com, 0903 102 418.
 
