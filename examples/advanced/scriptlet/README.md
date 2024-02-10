@@ -12,7 +12,7 @@ event occurs. Values of report variables can be affected through scriptlets.
 Scriptlet is a Java class which extends either one of:  
 
 1. net.sf.jasperreports.engine.JRAbstractScriptlet
-2. net.sf.jasperreports.engine.JRDefaultScriptlet.
+2. net.sf.jasperreports.engine.JRDefaultScriptlet
 
 Using Scriptlet we can use user defined functions in jasper reports.  
 
