@@ -20,3 +20,10 @@ def jrPrint = JasperFillManager.fillReport(jrReport, params,
 
 JasperExportManager.exportReportToPdfFile(jrPrint, "report.pdf")
 ```
+
+## Start PostgreSQL database 
+
+```shell
+C:\Users\Jano\opt\postgre>bin\pg_ctl.exe -D data start
+C:\Users\Jano\opt\postgre>bin\pg_ctl.exe -D data stop
+```
