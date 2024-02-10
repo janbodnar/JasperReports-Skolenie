@@ -10,3 +10,9 @@ The language is set with the `language` attribute in the `jasperReport` tag.
               language="groovy"
               name="report" topMargin="20" bottomMargin="20">
 ```
+
+Groovy expressions are more powerful and shorter.  
+
+```xml
+<textFieldExpression><![CDATA[[5, 6, 7, 8, 9].findAll{it % 2}]]></textFieldExpression>
+```
