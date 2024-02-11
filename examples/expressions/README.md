@@ -9,8 +9,7 @@ for writing report expressions by default. Other scripting languages for report
 expressions such as Groovy, JavaScript, or BeanShell are supported by  
 JasperReports compilers.  
 
-In a JRXML report template, there are several elements that  
-define expressions as:  
+In a report template, there are several elements that define expressions as:  
 
  * &lt;variableExpression&gt;
  * &lt;initialValueExpression&gt;
@@ -19,7 +18,7 @@ define expressions as:
  * &lt;imageExpression&gt;
  * &lt;textFieldExpression&gt;
 
-$F{} - refers to fields  
-$V{} - refers to variables  
-$P{} - refers to parameters  
-$R{} - refers to resource bundle  
+`$F{}` - refers to fields  
+`$V{}` - refers to variables  
+`$P{}` - refers to parameters  
+`$R{}` - refers to resource bundle  
