@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+   http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              language="groovy"
+              name="report" topMargin="20" bottomMargin="20">
+
+    <import value="com.zetcode.CleanData"/>
+
+    <variable name="names" class="java.util.List">
+        <variableExpression><![CDATA[['John\t\t\tDoe.', '\nRoger\nRoe!\n\n\n', 
+            'David\nNovak,\n\n', '\nRobert Novak?', '\tPeter\t\tNovotny?', 
+            'Lucia Biela!', '\t\tTomas Gregor;'] ]]>
+        </variableExpression>
+    </variable>
+
+    <summary>
+        <band height="255">
+            <textField>
+                <reportElement x="5" y="5" width="200" height="35"/>
+                <textFieldExpression><![CDATA[ CleanData.cleanText($V{names}[0]) ]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="5" y="45" width="200" height="35"/>
+                <textFieldExpression><![CDATA[ CleanData.cleanText($V{names}[1]) ]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="5" y="85" width="200" height="35"/>
+                <textFieldExpression><![CDATA[ CleanData.cleanText($V{names}[2]) ]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="5" y="125" width="200" height="35"/>
+                <textFieldExpression><![CDATA[ CleanData.cleanText($V{names}[3]) ]]></textFieldExpression>
+            </textField>
+        </band>
+    </summary>
+
+</jasperReport>
