@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports 
+            http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+        name="report" pageWidth="595" pageHeight="842" columnWidth="555" 
+        leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+
+    <style name="default" isDefault="true" fontName="DejaVu Sans"/>
+    <parameter name="text"/>
+
+   <detail>
+        <band height="300">
+
+            <textField textAdjust="CutText">
+                <reportElement x="5" y="5" width="490" height="250"/>
+                <textElement markup="html"/>
+                <textFieldExpression>
+                    <![CDATA[$P{text}]]>
+                </textFieldExpression>
+            </textField>
+
+        </band>
+    </detail>
+
+
+</jasperReport>
