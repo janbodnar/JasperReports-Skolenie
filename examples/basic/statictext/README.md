@@ -1,4 +1,3 @@
-# JasperReports simple 
+# JasperReports static text 
 
-This is a simple example to get things going.  
-Compile with: `groovy report.gvy`   
+The example shows a static text with the ```staticText``` tag.  
