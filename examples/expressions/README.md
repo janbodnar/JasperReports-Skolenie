@@ -11,12 +11,12 @@ JasperReports compilers.
 
 In a report template, there are several elements that define expressions as:  
 
- * `&lt;variableExpression&gt;`
- * `&lt;initialValueExpression&gt;`
- * `&lt;groupExpression&gt;`
- * `&lt;printWhenExpression&gt;`
- * `&lt;imageExpression&gt;`
- * `&lt;textFieldExpression&gt;`
+ * `<variableExpression>`
+ * `<initialValueExpression>`
+ * `<groupExpression>`
+ * `<printWhenExpression>`
+ * `<imageExpression>`
+ * `<textFieldExpression>`
 
 `$F{}` - refers to fields  
 `$V{}` - refers to variables  
