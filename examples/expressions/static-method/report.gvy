@@ -16,12 +16,12 @@ def jrPrint = JasperFillManager.fillReport(jrReport, params, new JREmptyDataSour
 
 JasperExportManager.exportReportToPdfFile(jrPrint, 'report.pdf')
 
-public class RandomName {
+class RandomName {
 
-    static List<String> names = ['John Doe', 'Roger Roe', 'David Novak', 'Robert Novak', 
+    private static List<String> names = ['John Doe', 'Roger Roe', 'David Novak', 'Robert Novak', 
         'Peter Novotny', 'Lucia Biela', 'Tomas Gregor']
 
-    public static String pick() {
+    static String pick() {
         names.shuffle()
         names.first()
     }
