@@ -2,6 +2,23 @@
 
 The template fields are mapped to the keys of the maps.
 
+```xml
+<field name="id" class="java.lang.Integer">
+    <fieldDescription><![CDATA[id]]></fieldDescription>
+</field>
+
+<field name="name">
+    <fieldDescription><![CDATA[name]]></fieldDescription>
+</field>
+
+<field name="occupation">
+    <fieldDescription><![CDATA[occupation]]></fieldDescription>
+</field>
+```
+
+The field names are: `id`, `name`, and `occupation`.
+
+
 ## JRMapCollectionDataSource
 
 ```groovy
