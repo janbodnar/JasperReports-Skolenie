@@ -1,6 +1,6 @@
 # Map data sources
 
-
+The template fields are mapped to the keys of the maps.
 
 ## JRMapCollectionDataSource
 
