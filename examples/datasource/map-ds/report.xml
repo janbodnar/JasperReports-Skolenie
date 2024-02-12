@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport xmlns = "http://jasperreports.sourceforge.net/jasperreports"
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
+        http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+    name="report" topMargin="20" bottomMargin="20">
+
+    <field name="id" class="java.lang.Integer">
+        <fieldDescription><![CDATA[id]]></fieldDescription>
+    </field>
+
+    <field name="name">
+        <fieldDescription><![CDATA[name]]></fieldDescription>
+    </field>
+
+    <field name="occupation">
+        <fieldDescription><![CDATA[occupation]]></fieldDescription>
+    </field>
+
+    <detail>
+        <band height="20">
+            <textField>
+                <reportElement x="0" y="0" width="50" height="20"/>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+
+            <textField>
+                <reportElement x="70" y="0" width="80" height="20"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+
+            <textField>
+                <reportElement x="170" y="0" width="80" height="20"/>
+                <textFieldExpression><![CDATA[$F{occupation}]]></textFieldExpression>
+            </textField>
+
+        </band>
+    </detail>
+
+
+</jasperReport>
