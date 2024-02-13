@@ -6,7 +6,6 @@
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
    http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-              whenNoDataType="NoDataSection"
               name="report" topMargin="10" bottomMargin="10">
 
     <summary>

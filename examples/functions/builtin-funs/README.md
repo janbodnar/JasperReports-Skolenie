@@ -11,7 +11,7 @@ https://javadoc.io/doc/net.sf.jasperreports/jasperreports-functions/latest/net/s
 ```
 
 ```
-@Grab(group='net.sf.jasperreports', module='jasperreports-fonts', version='6.20.1')
+@Grab(group='net.sf.jasperreports', module='jasperreports-fonts', version='6.21.0')
 ```
 
 ```groovy
