@@ -3,6 +3,8 @@
 This is the skeleton for a code example  
 
 ```groovy
+package com.zetcode
+
 @Grab(group='net.sf.jasperreports', module='jasperreports', version='6.21.0')
 @Grab(group='com.github.librepdf', module='openpdf', version='1.3.39')
 
