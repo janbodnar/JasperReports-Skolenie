@@ -6,26 +6,33 @@
               xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
                                     http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              pageWidth="595"
               name="report">
-
     <style name="defFont" isDefault="true" vAlign="Top" hAlign="Left"/>
 
     <detail>
         <band height="350">
 
             <staticText>
-                <reportElement x="5" y="5" width="400" height="70">
-                   <property name="net.sf.jasperreports.text.truncate.at.char" value="true"/>
-                   <property name="net.sf.jasperreports.text.truncate.suffix" value="..."/>
-                </reportElement>
+                <reportElement x="5" y="5" width="535" height="70" mode="Opaque" backcolor="#E5ECF9"/>
                 <text>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id justo 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id justo
 lacus. Nullam semper sed nulla finibus semper. Sed tristique ipsum et
 ullamcorper ullamcorper. In interdum sapien eu scelerisque faucibus. Sed nec ex
 at tortor varius aliquet. Donec cursus lorem massa, faucibus auctor neque
 dignissim id. Quisque eu ultrices nisl, et commodo ligula. Phasellus neque nunc,
 interdum quis lectus a, cursus egestas tellus. Fusce dictum ligula sed porta
-scelerisque. 
+scelerisque.
+                </text>
+            </staticText>
+
+            <staticText>
+                <reportElement x="0" y="80" width="555" height="140"/>
+                <textElement textAlignment="Center">
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text>
+Report created by Martin Novak
                 </text>
             </staticText>
 

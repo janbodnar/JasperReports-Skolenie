@@ -22,6 +22,14 @@ The evaluationTime attribute can have one of the following values
         used for expressions that combine values evaluated at different times, like the percentage
         out of a total
 
+## paragraph
+
+```xml
+<textElement markup="none">
+    <paragraph lineSpacing="Single" firstLineIndent="-10" leftIndent="0" spacingBefore="0"/>
+</textElement>
+```
+
 
 ## Complex expressions
 
