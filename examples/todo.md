@@ -7,6 +7,10 @@
 name="Float_UP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 ```
 
+## JRLoader.loadObject
+
+`JasperReport report = (JasperReport) JRLoader.loadObject(new File("/home/jerry/Sample.jasper"));`
+
 ## evaluationTime
 
 The evaluationTime attribute can have one of the following values   
