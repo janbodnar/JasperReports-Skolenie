@@ -7,6 +7,38 @@
 name="Float_UP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 ```
 
+## JSON
+
+```xml
+<parameter name="JsonData" class="java.lang.String">
+</parameter>
+<parameter name="JSON_INPUT_STREAM" class="java.io.InputStream">
+   <defaultValueExpression><![CDATA[new ByteArrayInputStream($P{JsonData}.getBytes("UTF-8"))]]></defaultValueExpression>
+</parameter>
+<queryString language="json">
+  <![CDATA[..json query..]]>
+</queryString>
+```
+
+```java
+JsonDataSource​(com.fasterxml.jackson.databind.JsonNode jsonTree, java.lang.String selectExpression) 	 
+JsonDataSource​(java.io.File file) 	 
+JsonDataSource​(java.io.File file, java.lang.String selectExpression) 	 
+JsonDataSource​(java.io.InputStream stream) 	 
+JsonDataSource​(java.io.InputStream jsonStream, java.lang.String selectExpression) 	 
+JsonDataSource​(java.lang.String location, java.lang.String selectExpression) 	 
+JsonDataSource​(JasperReportsContext jasperReportsContext, java.lang.String location, java.lang.String selectExpression) 	
+JsonDataSource​(RepositoryContext repositoryContext, java.lang.String location, java.lang.String selectExpression)
+```
+
+```java
+JSONObject jsonObject = new JSONObject(jsonString);
+JSONArray contactsArray = jsonObject.getJSONArray("contacts");
+JSONObject number = contactsArray.getJSONObject(1);
+String numbers = number.getString("number");
+```
+
+
 ## JRLoader.loadObject
 
 `JasperReport report = (JasperReport) JRLoader.loadObject(new File("/home/jerry/Sample.jasper"));`
