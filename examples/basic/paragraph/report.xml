@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport xmlns = "http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
+                                    http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              pageWidth="595"
+              name="report">
+    <style name="defFont" isDefault="true" vAlign="Top" hAlign="Left"/>
+
+    <detail>
+        <band height="350">
+
+            <staticText>
+                <reportElement x="5" y="0" width="555" height="130" mode="Opaque" backcolor="#E5ECF9"/>
+                <textElement>
+                    <paragraph lineSpacing="Fixed" lineSpacingSize="10" spacingBefore="0" spacingAfter="10"/>
+                </textElement>
+                <text>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id justo
+lacus. Nullam semper sed nulla finibus semper. Sed tristique ipsum et
+ullamcorper ullamcorper. In interdum sapien eu scelerisque faucibus. Sed nec ex
+at tortor varius aliquet. Donec cursus lorem massa, faucibus auctor neque
+dignissim id. Quisque eu ultrices nisl, et commodo ligula. Phasellus neque nunc,
+interdum quis lectus a, cursus egestas tellus. Fusce dictum ligula sed porta
+scelerisque.
+                </text>
+            </staticText>
+
+        </band>
+    </detail>
+
+</jasperReport>

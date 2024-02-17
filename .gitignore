@@ -3,3 +3,9 @@
 .lsp/.cache/lock.mdb
 *.gvy~
 *.pdf
+examples/datasource/json-col/jasperreports.properties
+examples/datasource/json-col/README.md
+examples/datasource/json-col/report.gvy
+examples/datasource/json-col/report.xml
+examples/datasource/json-col/users.json
+examples/datasource/json-col/data/users.json
