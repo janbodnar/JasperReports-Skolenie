@@ -14,7 +14,7 @@ Dĺžka trvania: 2 x 5 hodín počas dvoch dní
 Výuka prebieha v priestoroch vašej firmy.  
 Cenu školenia vám oznámim, keď ma kontaktujete. 
 
-Kontakt na školiteľa: jan.bodnar(at)gmail.com, 0903 102 418.
+<!--Kontakt na školiteľa: jan.bodnar(at)gmail.com, 0903 102 418.-->
 
 
 ## Nástroje
